@@ -2378,7 +2378,7 @@ header .header-top .header-info-right ul li i {
 /*        New Version
 /*----------------------------------------*/
 .banner-area-5 {
-  background-color: #101010;
+  background-color: #ffffff;
   position: relative;
   z-index: 1;
   overflow: hidden;
@@ -2498,8 +2498,12 @@ header .header-top .header-info-right ul li i {
   gap: 30px;
 }
 
+
+
+
 .banner-area-5 .basic-loan-calculator {
-  background-color: var(--bs-white);
+  /* background-color: var(--bs-white); */
+  background-color: #ffffff94;
   border-radius: 8px;
   max-width: 450px;
   padding: 35px;
@@ -12040,6 +12044,10 @@ body.body_dark .header-menu.header-menu-2 .menu>.nav-item>.nav-link {
   height: 26px;
 }
 
+
+.navbar-brand.sticky_logo img {
+  width: 130px ;
+}
 .js-darkmode-btn label {
   margin: 0;
   cursor: pointer;
@@ -12078,3 +12086,14 @@ body.body_dark .header-menu.header-menu-2 .menu>.nav-item>.nav-link {
 }
 
 /*# sourceMappingURL=style.css.map */
+
+
+/* custom style */
+
+
+.banner-form {
+  position: absolute !important;
+  top: 100px !important;
+  right: 100px !important;
+  z-index: 9999;
+}

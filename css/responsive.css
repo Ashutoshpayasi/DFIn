@@ -607,6 +607,15 @@
   .cta-action-area-three img{
     max-width: 100%;
   }
+
+
+  
+.banner-form {
+  position:static !important;
+  /* top: 100px !important; */
+  /* right: 100px !important; */
+  z-index: 9999;
+}
 }
 @media (max-width: 768px) {
   .theme-btn.theme-btn-lg {
@@ -977,6 +986,11 @@
   }
   .bank-section-title h1 br{
     display: none;
+  }
+
+
+  .navbar-brand.sticky_logo img {
+    width: 100px ;
   }
 }
 @media (max-width: 575px) {
@@ -1570,5 +1584,9 @@
   }
   .features-icon-box:not(:first-child){
     margin-top: 25px;
+  }
+
+  .hide-on-mobile {
+    display: none;
   }
 }
