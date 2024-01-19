@@ -1,580 +1,1095 @@
-<!DOCTYPE html>
-<html lang="en">
 
-<!-- Mirrored from html-template.spider-themes.net/banca/index-simple.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2024 09:29:23 GMT -->
+<!DOCTYPE HTML>
+<html lang="en-US">
+
 <head>
     <meta charset="UTF-8">
-    <title>Captcha</title>
-    <link rel="stylesheet"
-          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
-          integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7"
-          crossorigin="anonymous">
-    <link href="data:image/x-icon;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQEAYAAABPYyMiAAAABmJLR0T///////8JWPfcAAAACXBIWXMAAABIAAAASABGyWs+AAAAF0lEQVRIx2NgGAWjYBSMglEwCkbBSAcACBAAAeaR9cIAAAAASUVORK5CYII="
-          rel="icon" type="image/x-icon"/>
-    <link href="https://fonts.googleapis.com/css?family=Noto+Sans"
-          rel="stylesheet">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <title>Banca - Banking & Business Loan Bootstrap-5 HTML Template</title>
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
-    <script src="https://www.google.com/recaptcha/api.js?hl=en"
-            async defer>
-    </script>
-
-
-    <style>
-        html, body {
-            height: 100%;
-        }
-
-        .wraper {
-            padding-bottom: 56px;
-            position: relative;
-            min-height: 100%;
-        }
-        .invisible_mode .wraper {
-            display: none;
-        }
-
-        .header {
-            height: 63px;
-            background-color: white;
-        }
-
-        .middle {
-            height: 186px;
-            background-color: rgba(55, 171, 99, 0.75);
-        }
-
-        .bottom {
-            background-color: #f2f2f2;
-            position: absolute;
-            bottom: 0px;
-            top: 249px;
-            width: 100%;
-        }
-
-        .captcha_absolute {
-            margin-top: -153px;
-        }
-
-        .captcha_div {
-            width: 485px;
-            margin: 0 auto;
-            box-shadow: 0 5px 8px 0 rgba(0, 0, 0, 0.18), 0 0 8px 0 rgba(0, 0, 0, 0.12);
-            background-color: white;
-            padding: 47px 48px 18px 48px;
-            position: relative;
-        }
-
-        .cap_head {
-            border-bottom: 1px solid #d8d8d8;
-            padding-bottom: 17px;
-            margin: 0 10px 20px 10px;
-        }
-
-        .logo_shield {
-            display: inline-block;
-        }
-
-        .logo_shield img {
-            width: 54px;
-            height: 72px;
-        }
-
-        .cap_side {
-            width: 295px;
-        }
-
-        h4#text {
-            font-size: 20px;
-            line-height: 1.38;
-            color: #000000;
-            font-weight: bold;
-            font-family: Noto Sans, sans-serif;
-            margin: 6px 0 0 0;
-        }
-
-        .cap_text {
-            font-family: Noto Sans, sans-serif;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            line-height: 1.65;
-            color: #000000;
-        }
-
-        p.cap_note {
-            font-size: 20px;
-            margin: 0;
-        }
-
-        .captcha_passed h4#text, .captcha_passed p.cap_note { font-size: 18px }
-
-        .cap_mess {
-            font-size: 13px;
-        }
-
-        .powered_span {
-            position: absolute;
-            bottom: 15px;
-            width: 100%;
-            text-align: center;
-            height: 18px;
-            opacity: 0.45;
-            font-family: Noto Sans;
-            font-size: 13px;
-            font-weight: normal;
-            font-style: normal;
-            font-stretch: normal;
-            color: #1d1d1d;
-        }
-
-        /* A few hacks for re-captcha */
-
-        .invisible_mode .re-captcha-wrapper { /* shift reCAPTCHA below our text */
-            top: 350px !important;
-        }
-        .invisible_mode .re-captcha-wrapper > div:first-child { /* hide reCAPTCHA mask */
-            display: none !important;
-        }
-        .visible_mode #re-captcha {  /* align to center */
-            width: 305px;
-            margin: 0 auto;
-        }
-
-        /* Imunify360 preloader */
-
-        .big_loader {
-            position: absolute;
-            left: 0;
-            right: 0;
-            top: 50%;
-            width: 90px;
-            height: 90px;
-            margin: -45px auto 0 auto;
-            opacity: 0.55;
-        }
-        .visible_mode .big_loader {
-            display: none;
-        }
-
-        .rot {
-            -webkit-animation: spin 2s ease-in-out infinite;
-            animation: spin 2s ease-in-out infinite
-        }
-
-        @keyframes spin {
-            0% {
-                -webkit-transform: rotate(0deg);
-                -moz-transform: rotate(0deg);
-                -ms-transform: rotate(0deg);
-                -o-transform: rotate(0deg);
-                transform: rotate(0deg);
-            }
-            100% {
-                -webkit-transform: rotate(360deg);
-                -moz-transform: rotate(360deg);
-                -ms-transform: rotate(360deg);
-                -o-transform: rotate(360deg);
-                transform: rotate(360deg);
-            }
-        }
-    </style>
-
-<!--
-This whole tempalte goes to inside <head></head> tags
-Modify this file to add javascript or css files for your page from customize/static folder
-Jinja2 (which is index.html template engine) is not allowed to use here.
-
-Please, restart captcha server after your changes.
-service imunify360-captcha restart
-service imunify360-captchaserver-nginx restart
-
-Example:
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-Add your custom css from customize/static/ folder
-<link type="text/css" rel="stylesheet" href="static/my.css">
--->
+    <!-- CSS here -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/jquery.fancybox.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/nouislider.min.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
 </head>
-<body class="visible_mode">
-<div class="wraper">
 
-<!--
-You can add your css, javascript, images and other static files in /customize/static/ folder
-And add css, javascript into the end of `head` section of this template
-Please, restart webshield after your changes
-systemctl restart imunify360-webshield
--->
-<div class="header">
-  <!-- Header of the index page -->
-</div>
-
-<div class="middle">
-  <!-- Body of the index page -->
-</div>
-
-<div class="bottom">
-  <!-- Footer of the index page -->
-  <span class="powered_span">Powered by Imunify360</span>
-</div>
-
-    <div class="captcha_absolute">
-        <div class="captcha_div">
-            <style>
-    .dropdown {
-        position: absolute;
-        top: 10px;
-        right: 0;
-    }
-
-    .dropdown .dropdown-toggle {
-        background-color: #fff;
-        border: none;
-        outline: none;
-        color: #858585;
-        font-size: 13px;
-        height: 32px;
-        line-height: 1;
-        transition: all 0.4s;
-        font-family: 'Noto Sans', sans-serif;
-        margin-right: 22px;
-    }
-
-    .dropdown .dropdown-toggle:hover {
-        background-color: #e7e7e7;
-    }
-
-    .dropdown .dropdown-menu-content {
-        background-color: #ffffff;
-        box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.24);
-        border-width: 0px;
-        border-radius: 0;
-        padding: 11px 0 0;
-        overflow-y: scroll;
-        max-height: 365px;
-        margin: 0;
-    }
-
-    .dropdown .glyphicon {
-        margin-left: 6px;
-        top: 2px;
-        transition: 0.3s all;
-    }
-
-    .dropdown li {
-        height: 35px;
-        text-align: left;
-        padding-left: 24px;
-        font-size: 13px;
-        color: #4d4d4e;
-        line-height: 2.85;
-        font-family: 'Noto Sans', sans-serif;
-    }
-    .dropdown li:last-child {
-        margin-bottom: 14px;
-    }
-
-    .dropdown li.active {
-        font-weight: bold;
-    }
-
-    .dropdown li:focus, .dropdown li:hover {
-        color: #4d4d4e;
-        background-color: rgba(56, 171, 99, 0.11);
-    }
-
-    .dropdown .dropdown-menu-content > li:hover {
-        cursor: pointer;
-    }
-
-    .dropdown .dropdown-menu-container {
-        max-height: 365px;
-        overflow: hidden;
-        width: 164px;
-        padding: 0;
-        border: 0;
-        border-radius: 0;
-        box-shadow: 0 2px 14px 0 rgba(0, 0, 0, 0.24);
-        z-index: 5000000000;
-    }
-
-    .dropdown.open .glyphicon {
-        transform: rotate(180deg);
-    }
-</style>
-
-
-<div class="dropdown">
-    <button type="button" class="dropdown-toggle" data-toggle="dropdown"
-            aria-haspopup="true" aria-expanded="false">
-        <span class="dropdown-title">English</span>
-        <span class="glyphicon glyphicon-menu-down" aria-hidden="true"></span>
-    </button>
-    <div class="dropdown-menu dropdown-menu-container">
-        <ul class="dropdown-menu-content"></ul>
-    </div>
-</div>
-
-<script>
-    (function () {
-        var items = {
-            English: 'en',
-            Dutch: 'nl',
-            Ukrainian: 'uk',
-            Arabic: 'ar',
-            Italian: 'it',
-            Chinese: 'zh',
-            Polish: 'pl',
-            Danish: 'da',
-            Hungarian: 'hu',
-            Russian: 'ru',
-            French: 'fr',
-            Spanish: 'es',
-            Romanian: 'ro',
-            Greek: 'el',
-            Swedish: 'sv',
-            Turkish: 'tr',
-            Indonesian: 'id',
-            Portuguese: 'pt',
-            Hebrew: 'he',
-            German: 'de',
-            Malay: 'ms',
-            Norwegian: 'no',
-            Farsi: 'fa',
-        };
-        var currentLocale = $('html').attr('lang');
-
-        var currentLocaleName = Object.keys(items).find(function (key) {
-            return items[key] === currentLocale;
-        });
-
-        $('.dropdown-title').text(currentLocaleName);
-
-        $('.dropdown-menu-content')
-            .append(Object.keys(items).sort().map(function (item) {
-                return $('<li>').text(item);
-            }))
-            .on("click", function (e) {
-                var nextLocaleName = e.target.innerText;
-                if (nextLocaleName === currentLocaleName) {
-                    e.stopPropagation();
-                } else {
-                    document.cookie = 'locale=' + items[nextLocaleName] + ';path=/';
-                    location.reload(true);
-                }
-
-            });
-
-        $([].find.call($('.dropdown-menu li'), function (item) {
-            return item.innerText === currentLocaleName;
-        })).addClass('active');
-
-        function insertParam(key, value) {
-            key = encodeURIComponent(key);
-            value = encodeURIComponent(value);
-
-            var kvp = document.location.search.substr(1).split('&');
-            if (kvp == '') {
-                document.location.search = '?' + key + '=' + value;
-            }
-            else {
-
-                var i = kvp.length;
-                var x;
-                while (i--) {
-                    x = kvp[i].split('=');
-
-                    if (x[0] === key) {
-                        x[1] = value;
-                        kvp[i] = x.join('=');
-                        break;
-                    }
-                }
-
-                if (i < 0) {
-                    kvp[kvp.length] = [key, value].join('=');
-                }
-
-                //this will reload the page, it's likely better to store this until finished
-                document.location.search = kvp.join('&');
-            }
-        }
-    })();
-</script>
-
-            <div class="cap_head clearfix">
-                <div class="logo_shield">
-                    <img src="https://html-template.spider-themes.net/a9bc224bd710f56d27affffddc764239b58c3faa0/shield.png">
-                </div>
-                <div class="cap_side pull-right">
-                    <h4 id="text">html-template.spider-themes.net</h4>
-                    <p class="cap_note cap_text count_down">
-                        is protected by Imunify360
-                    </p>
+<body data-spy="scroll" data-offset="70">
+    <!-- Preloader -->
+    <div id="preloader">
+        <div id="ctn-preloader" class="ctn-preloader">
+            <div class="round_spinner">
+                <div class="spinner"></div>
+                <div class="text">
+                    <img src="img/logo/Logo-2.png" alt="">
                 </div>
             </div>
-
-            <p class="cap_mess cap_text text-center">
-                We have noticed an unusual activity from your <b>IP 122.162.151.11</b> and blocked access to this website.
-            </p>
-
-            <p class="cap_mess cap_text text-center">
-                <b>Please confirm that you are not a robot</b>
-            </p>
-
-            <form class="form-group form-captcha">
-                <div id="re-captcha"
-                     class="g-recaptcha"
-                     data-sitekey="6LcZaPwUAAAAAKQ8DW178c0eBeIXAr0c_oEQnHMZ"
-                     data-callback="check"
-                ></div>
-            </form>
+            <h2 class="head">Did You Know?</h2>
+            <p></p>
         </div>
     </div>
-</div>
+    <!-- Header -->
+    <header class="header">
+        <div class="header-menu header-menu-4" id="sticky">
+            <nav class="navbar navbar-expand-lg ">
+                <div class="container">
+                    <a class="navbar-brand sticky_logo" href="index.html">
+                        <img class="main" src="img/logo/Logo.png" srcset="img/logo/Logo@2x.png 2x" alt="logo">
+                        <img class="sticky" src="img/logo/Logo-2.png" srcset="img/logo/Logo-2@2x.png 2x" alt="logo">
+                    </a>
+                    <button class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="menu_toggle">
+                            <span class="hamburger">
+                                <span></span>
+                                <span></span>
+                                <span></span>
+                            </span>
+                            <span class="hamburger-cross">
+                                <span></span>
+                                <span></span>
+                            </span>
+                        </span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav menu ms-auto">
+                            <li class="nav-item dropdown submenu ">
+                                <a href="#" class="nav-link dropdown-toggle active" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                                <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="true"
+                                    data-bs-toggle="dropdown"></i>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item "><a href="index.html" class="nav-link">Smart Finance</a>
+                                    </li>
+                                    <li class="nav-item"><a href="index-company.html" class="nav-link">Loan Company</a>
+                                    </li>
+                                    <li class="nav-item"><a href="index-app.html" class="nav-link">Mobile App</a>
+                                    </li>
+                                    <li class="nav-item"><a href="index-simple.html" class="nav-link active">Simple Banca</a>
+                                    </li>
+                                    <li class="nav-item"><a href="index-loan.html" class="nav-link">Loan Steps</a>
+                                    </li>
+                                    <li class="nav-item"><a href="index-finance.html" class="nav-link">Finance Sass App</a>
+                                    </li>
+                                    <li class="nav-item"><a href="index-small-bank.html" class="nav-link">Small Bank</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="loan.html" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Loan
+                                </a>
+                                <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false"
+                                    data-bs-toggle="dropdown"></i>
+
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="loan.html">Get loan</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="#" role="button"
+                                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Loan
+                                            Application</a>
+                                        <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false"
+                                            data-bs-toggle="dropdown"></i>
+
+                                        <ul class="dropdown-menu">
+                                            <li class="nav-item"><a class="nav-link" href="loan-details.html">Step
+                                                    01</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="personal-details.html">Step
+                                                    02</a></li>
+                                            <li class="nav-item"><a class="nav-link" href="document-upload.html">Step
+                                                    03</a></li>
+
+                                        </ul>
+                                    </li>
+
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="career.html" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Job Pages
+                                </a>
+                                <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false"
+                                    data-bs-toggle="dropdown"></i>
+                                <ul class="dropdown-menu">
+                                    <li class="nav-item"><a class="nav-link" href="career.html">Career</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="job-post.html">Jobs</a>
+                                    </li>
+                                    <li class="nav-item"><a class="nav-link" href="job-application.html">Job
+                                            Application</a>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                    aria-haspopup="true" aria-expanded="false">
+                                    Pages
+                                </a>
+                                <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false"
+                                    data-bs-toggle="dropdown"></i>
+                                <ul class="dropdown-menu ">
+                                    <li class="nav-item"><a class="nav-link" href="card.html">Cards</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="error.html">404 Error</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown submenu">
+                                <a class="nav-link dropdown-toggle" href="blog.html" role="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Blog
+                                </a>
+                                <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false"
+                                    data-bs-toggle="dropdown"></i>
+                                <ul class="dropdown-menu ">
+                                    <li class="nav-item"><a class="nav-link" href="blog.html">Blog Listing</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="blog-details.html">Blog Details</a>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ul>
+                        <a class="theme-btn theme-btn-rounded-2 theme-btn-alt"
+                            href="https://themeforest.net/item/banca-banking-business-loan-bootstrap5html-website-template/32788885?s_rank=9"
+                            target="_blank">Buy Banca</a>
+                        <div class="px-2 js-darkmode-btn" title="Toggle dark mode">
+                            <label for="something" class="tab-btn tab-btns">
+                                <ion-icon name="moon"></ion-icon>
+                            </label>
+                            <label for="something" class="tab-btn">
+                                <ion-icon name="sunny"></ion-icon>
+                            </label>
+                            <label class=" ball" for="something"></label>
+                            <input type="checkbox" name="something" id="something" class="dark_mode_switcher">
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- Header end-->
 
 
-<!-- imunify360 preloader -->
-<div class="big_loader">
-    <svg class="rot" width="90px" height="90px" viewBox="0 0 47 47"
-         version="1.1"
-         xmlns="http://www.w3.org/2000/svg"
-         xmlns:xlink="http://www.w3.org/1999/xlink">
-        <title>Loader</title>
-        <defs>
-            <polygon id="path-1"
-                     points="0 0.375484146 0 15.7255695 15.7013244 15.7255695 15.7013244 0.375484146 0 0.375484146"></polygon>
-        </defs>
-        <g id="Page-1" stroke="none" stroke-width="1" fill="none"
-           fill-rule="evenodd">
-            <g id="Logo" transform="translate(-5.000000, -2.000000)">
-                <g id="Group-2" transform="translate(5.000000, 2.000000)">
-                    <path d="M22.6150244,4.52988293 C23.1538049,3.06256585 23.6031707,1.59582195 24.231939,0.158882927 C25.1902805,2.22459024 25.8190488,4.43989512 26.7768171,6.47579756 C29.1417195,7.40376098 31.7164024,7.7929439 34.1116829,8.69110244 C28.9623171,11.2663585 23.7229634,13.7510537 18.4836098,16.176139 C19.7709512,12.2545049 21.2382683,8.4217122 22.6150244,4.52988293 L22.6150244,4.52988293 Z"
-                          id="Fill-1" fill="#467C45"></path>
-                    <path d="M13.7718598,8.94461585 C16.1424939,7.68077439 18.4500793,6.28968902 20.8207134,5.02527439 C18.9240915,10.8412378 16.7747012,16.5614817 14.8465549,22.3774451 C12.7292622,18.3950549 10.895689,14.2544695 8.9044939,10.2090305 C8.27228659,8.85004268 7.5455061,7.55353049 7.00844512,6.16359146 C9.31545732,6.95342073 11.4648476,8.24935976 13.7718598,8.94461585"
-                          id="Fill-3" fill="#467C45"></path>
-                    <path d="M24.2134256,15.0745049 C29.4602305,12.4969561 34.7379866,9.91940732 40.0157427,7.4031878 C39.1565598,9.61276098 38.1747183,11.7300537 37.2232549,13.9086756 C38.4504134,16.2099561 39.9544134,18.388578 41.0898646,20.7511878 C35.4435598,18.9405415 29.8287793,17.0381878 24.2134256,15.0745049"
-                          id="Fill-5" fill="#467C45"></path>
-                    <g id="Group-9"
-                       transform="translate(0.000000, 11.919659)">
-                        <mask id="mask-2" fill="white">
-                            <use xlink:href="#path-1"></use>
-                        </mask>
-                        <g id="Clip-8"></g>
-                        <path d="M8.34869024,0.375484146 C9.93064146,3.33419146 11.2781659,6.43963049 12.7426171,9.45622805 C13.7387878,11.5362646 14.793422,13.5876427 15.7013244,15.7255695 C10.4579585,13.9091915 5.21401951,12.03435 -0.000114634146,10.0718134 C2.05069024,9.1341061 4.21842195,8.4898622 6.29845854,7.61119146 C6.97193415,5.17980122 7.67521463,2.77706951 8.34869024,0.375484146"
-                              id="Fill-7" fill="#467C45"
-                              mask="url(#mask-2)"></path>
-                    </g>
-                    <path d="M29.1793195,18.0496049 C33.5600634,19.4670561 37.9081366,21.0776659 42.2888805,22.5593122 C43.6742341,23.0745927 45.1558805,23.4609098 46.5085634,24.1372512 C44.2216122,25.039422 41.9025634,25.9100683 39.6477098,26.8110927 C38.8103073,29.4195927 38.2302585,32.1261049 37.3607585,34.7346049 C35.5890878,31.4497634 34.0432463,28.0353854 32.3684415,24.6852024 C31.3052098,22.4945439 30.1456854,20.3044585 29.1793195,18.0496049"
-                          id="Fill-10" fill="#467C45"></path>
-                    <path d="M28.9972232,29.3489207 C29.5789915,27.69475 30.0684793,26.0113476 30.7419549,24.3887012 C31.538089,25.7660305 32.1811866,27.2356402 32.9154183,28.6444939 C34.7220524,32.4709817 36.68115,36.205189 38.4568329,40.0316768 C36.2827963,39.1449817 34.1402841,38.1654329 31.9364427,37.2460671 C29.6403207,38.4709329 27.4662841,39.9405427 25.1094061,41.1035061 C26.3033207,37.1549329 27.7419793,33.2671159 28.9972232,29.3489207"
-                          id="Fill-12" fill="#467C45"></path>
-                    <path d="M4.97133902,25.64555 C9.93385122,27.1873793 14.7737049,29.036428 19.6748878,30.6705378 C20.4148512,30.9170012 21.1542415,31.1944159 21.8328756,31.5337329 C16.5304732,33.9685622 11.3214976,36.6498549 5.95776585,38.99355 C6.82096098,36.8355622 7.89966829,34.7698549 8.7319122,32.581489 C7.68358293,30.1764646 6.11194878,28.01905 4.97133902,25.64555"
-                          id="Fill-14" fill="#467C45"></path>
-                    <path d="M15.4549183,35.8770488 C19.4671134,33.9317073 23.4483573,31.8952317 27.4915037,30.0433171 C26.4110768,33.6542927 25.0222841,37.203939 23.8186256,40.8143415 C23.1090402,42.7275854 22.5530646,44.7033049 21.7511988,46.5855976 C20.7630524,44.4866463 20.0534671,42.2650366 19.1277963,40.1351341 C16.6276256,39.2094634 14.0042232,38.684439 11.4736744,37.9748537 C12.6773329,37.0801341 14.1584061,36.586061 15.4549183,35.8770488"
-                          id="Fill-16" fill="#467C45"></path>
-                </g>
-            </g>
-        </g>
-    </svg>
-</div>
+    <main>
 
-<script>
-    $(document).ready(function () {
-        var visibleByDefault = false;
-        var captchaIsPassed = false;
-        var captchaIsVisible = visibleByDefault;
-        var reCaptchaWrapper;
+        <!-- banner section -->
+        <section class="banner-area-3 pt-90" id="banner_animation2">
+            <div class="bg-slides">
+                <div class="slide" data-parallax='{"x": 220, "y": 0, "rotateZ":0}'>
+                    <img class="wow slideInRight" data-wow-delay='0.2s' src="img/banner/slide-shape-1.png" alt="img">
+                </div>
+                <div class="slide" data-parallax='{"x": 270, "y": 0, "rotateZ":0}'>
 
-        function do_reload() {
-            location.reload(true);
-        }
+                    <img class="wow slideInRight" data-wow-delay='0.6s' src="img/banner/slide-shape-2.png" alt="img">
+                </div>
+                <div class="slide" data-parallax='{"x": 330, "y": 0, "rotateZ":0}'>
 
-        window.check = function (value) {
-            $.ajax({
-                type: 'POST',
-                url: '/captchacheck',
-                data: {
-                    'captcha_value': value
-                }
-            }).done(function (data) {
-                if (data['success']) {
-                    captchaIsPassed = true;
-                    $("#text").next("p").text("");
-                    $("#text").text(
-                        "IP 122.162.151.11 has been unblocked"
-                    );
-                    setTimeout(do_reload, 1000);
-                } else {
-                    grecaptcha.reset();
-                }
-            }).fail(function () {
-                grecaptcha.reset();
-            });
-        };
+                    <img class="wow slideInRight" data-wow-delay='1.3s' src="img/banner/slide-shape-3.png" alt="img">
+                </div>
+            </div>
+            <div class="container">
+                <div class="row align-items-end">
+                    <div class="col-lg-7 pt-100 pt-lg-200 pb-lg-200 pb-100">
+                        <div class="banner-content pb-20 pt-20">
 
-        function updateUI() {
-            // change the size of our block to fit the captcha block
-            var blockWithText = $('.captcha_div');
-            var captchaBlock = reCaptchaWrapper.find('> div:last-child');
-            var currentPadding;
-            (function update () {
-                var space = captchaBlock.offset().top + captchaBlock.height() - blockWithText.height() - 100;
-                var padding = captchaIsPassed ? '' : space + 'px';
-                if (currentPadding !== padding) {
-                    blockWithText.css({'padding-bottom': padding});
-                }
-                setTimeout(update, 500);
-            })();
-        }
+                            <h1 class="wow fadeInUp" data-wow-delay="0.1s">Compare Loans From Several Banks Find The
+                                Cheapest Loan</h1>
 
-        function makeVisible() {
-            $('.big_loader').hide();  // hide our preloader
-            $('.wraper').show();  // show our text and stuff
-            // add class to reCAPTCHA wrapper so our css would apply to it
-            reCaptchaWrapper.addClass('re-captcha-wrapper');
-            captchaIsVisible = true;
-        }
+                            <a href="loan.html"
+                                class="wow fadeInUp mt-50 theme-btn theme-btn-rounded-2 theme-btn-lg theme-btn-alt"
+                                data-wow-delay="0.3s">Apply Now
+                                <i class="arrow_right"></i></a>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 d-none d-lg-block position-relative">
+                        <img class="person-img " src="img/banner/person-2.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- banner section end-->
 
-        function executeCaptcha() {
-            try {
-                grecaptcha.execute();
-            } catch (e) {
-                setTimeout(executeCaptcha, 2000);  // retry
-            }
-        }
+        <!-- Feature and Calculator start -->
+        <section class="feature-calculator pt-120 pb-140 bg_white">
+            <div class="container">
+                <!-- Feature -->
+                <div class="feature">
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="feature-slider">
+                                <div class="feature-card-widget-3 wow fadeInLeft  card-1" data-wow-delay="0.1s">
+                                    <div class="shapes">
+                                        <img src="img/feature/shape-17.png" alt="shape">
+                                        <img src="img/feature/shape-18.png" alt="shape">
+                                        <img src="img/feature/shape-19.png" alt="shape">
+                                        <img src="img/feature/shape-20.png" alt="shape">
+                                    </div>
+                                    <img src="img/feature/icon-8.svg" alt="icon">
+                                    <span class="title">Mortgage</span>
+                                    <h5>Got a <span> question about Mortgage Loan?</span></h5>
+                                    <a href="#">Write to us</a>
+                                </div>
+                                <div class="feature-card-widget-3 wow fadeInLeft  card-2" data-wow-delay="0.3s">
+                                    <div class="shapes">
+                                        <img src="img/feature/shape-21.png" alt="shape">
+                                        <img src="img/feature/shape-22.png" alt="shape">
+                                        <img src="img/feature/shape-23.png" alt="shape">
+                                        <img src="img/feature/shape-24.png" alt="shape">
+                                    </div>
+                                    <img src="img/feature/icon-9.svg" alt="icon">
+                                    <span class="title">Bank account</span>
+                                    <h5>Got a <span> question about Mortgage Loan?</span></h5>
+                                    <a href="#">Write to us</a>
+                                </div>
+                                <div class="feature-card-widget-3 wow fadeInLeft  card-3" data-wow-delay="0.5s">
+                                    <div class="shapes">
+                                        <img src="img/feature/shape-25.png" alt="shape">
+                                        <img src="img/feature/shape-26.png" alt="shape">
+                                        <img src="img/feature/shape-27.png" alt="shape">
+                                        <img src="img/feature/shape-28.png" alt="shape">
+                                        <img src="img/feature/shape-28.png" alt="shape">
+                                        <img src="img/feature/shape-29.png" alt="shape">
+                                        <img src="img/feature/shape-29.png" alt="shape">
+                                    </div>
+                                    <img src="img/feature/icon-10.svg" alt="icon">
+                                    <span class="title">Loans</span>
+                                    <h5>Got a <span> question about Mortgage Loan?</span></h5>
+                                    <a href="#">Write to us</a>
+                                </div>
+                                <div class="feature-card-widget-3 wow fadeInLeft  card-1" data-wow-delay="0.7s">
+                                    <div class="shapes">
+                                        <img src="img/feature/shape-17.png" alt="shape">
+                                        <img src="img/feature/shape-18.png" alt="shape">
+                                        <img src="img/feature/shape-19.png" alt="shape">
+                                        <img src="img/feature/shape-20.png" alt="shape">
+                                    </div>
+                                    <img src="img/feature/icon-8.svg" alt="icon">
+                                    <span class="title">Mortgage</span>
+                                    <h5>Got a <span> question about Mortgage Loan?</span></h5>
+                                    <a href="#">Write to us</a>
+                                </div>
+                                <div class="feature-card-widget-3 wow fadeInLeft  card-2" data-wow-delay="0.9s">
+                                    <div class="shapes">
+                                        <img src="img/feature/shape-21.png" alt="shape">
+                                        <img src="img/feature/shape-22.png" alt="shape">
+                                        <img src="img/feature/shape-23.png" alt="shape">
+                                        <img src="img/feature/shape-24.png" alt="shape">
+                                    </div>
+                                    <img src="img/feature/icon-9.svg" alt="icon">
+                                    <span class="title">Bank account</span>
+                                    <h5>Got a <span> question about Mortgage Loan?</span></h5>
+                                    <a href="#">Write to us</a>
+                                </div>
+                                <div class="feature-card-widget-3 wow fadeInLeft  card-3" data-wow-delay="1.1s">
+                                    <div class="shapes">
+                                        <img src="img/feature/shape-25.png" alt="shape">
+                                        <img src="img/feature/shape-26.png" alt="shape">
+                                        <img src="img/feature/shape-27.png" alt="shape">
+                                        <img src="img/feature/shape-28.png" alt="shape">
+                                        <img src="img/feature/shape-28.png" alt="shape">
+                                        <img src="img/feature/shape-29.png" alt="shape">
+                                        <img src="img/feature/shape-29.png" alt="shape">
+                                    </div>
+                                    <img src="img/feature/icon-10.svg" alt="icon">
+                                    <span class="title">Loans</span>
+                                    <h5>Got a <span> question about Mortgage Loan?</span></h5>
+                                    <a href="#">Write to us</a>
+                                </div>
+                                <div class="feature-card-widget-3 wow fadeInLeft  card-1" data-wow-delay="1.3s">
+                                    <div class="shapes">
+                                        <img src="img/feature/shape-17.png" alt="shape">
+                                        <img src="img/feature/shape-18.png" alt="shape">
+                                        <img src="img/feature/shape-19.png" alt="shape">
+                                        <img src="img/feature/shape-20.png" alt="shape">
+                                    </div>
+                                    <img src="img/feature/icon-8.svg" alt="icon">
+                                    <span class="title">Mortgage</span>
+                                    <h5>Got a <span> question about Mortgage Loan?</span></h5>
+                                    <a href="#">Write to us</a>
+                                </div>
+                                <div class="feature-card-widget-3 wow fadeInLeft  card-2" data-wow-delay="1.5s">
+                                    <div class="shapes">
+                                        <img src="img/feature/shape-21.png" alt="shape">
+                                        <img src="img/feature/shape-22.png" alt="shape">
+                                        <img src="img/feature/shape-23.png" alt="shape">
+                                        <img src="img/feature/shape-24.png" alt="shape">
+                                    </div>
+                                    <img src="img/feature/icon-9.svg" alt="icon">
+                                    <span class="title">Bank account</span>
+                                    <h5>Got a <span> question about Mortgage Loan?</span></h5>
+                                    <a href="#">Write to us</a>
+                                </div>
+                                <div class="feature-card-widget-3 wow fadeInLeft  card-3" data-wow-delay="1.7s">
+                                    <div class="shapes">
+                                        <img src="img/feature/shape-25.png" alt="shape">
+                                        <img src="img/feature/shape-26.png" alt="shape">
+                                        <img src="img/feature/shape-27.png" alt="shape">
+                                        <img src="img/feature/shape-28.png" alt="shape">
+                                        <img src="img/feature/shape-28.png" alt="shape">
+                                        <img src="img/feature/shape-29.png" alt="shape">
+                                        <img src="img/feature/shape-29.png" alt="shape">
+                                    </div>
+                                    <img src="img/feature/icon-10.svg" alt="icon">
+                                    <span class="title">Loans</span>
+                                    <h5>Got a <span> question about Mortgage Loan?</span></h5>
+                                    <a href="#">Write to us</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Calculator -->
+                <div class="calculator mt-60">
+                    <div class="steps d-flex flex-wrap justify-content-between mt-50 mr-30 ml-30">
+                        <div class="single-step mt-2 mt-sm-0">
+                            <span>1</span>Apply for free in 2 min.
+                        </div>
+                        <div class="single-step mt-2 mt-sm-0">
+                            <span>2</span>Compare offers
 
-        if (!visibleByDefault) {
-            /**
-             * Detecting captcha when css is changed to visible.
-             * Invisible reCaptcha has no API calls when captcha will be visible,
-             * (captcha is shown to user).
-             * When captcha changed css "visibility" to the "visible", we should:
-             * 1. hide the loader and captcha mask
-             * 2. display some additional text
-             * 3. display a dropdown so user can switch to a different language
-             */
-            (function checkVisibility () {
-                reCaptchaWrapper = reCaptchaWrapper && reCaptchaWrapper.length
-                    ? reCaptchaWrapper
-                    : $('body > div:has(> div > iframe[src^="https://www.google.com/recaptcha"])');
-                if (reCaptchaWrapper.css('visibility') === 'visible') {
-                    makeVisible(reCaptchaWrapper);
-                    updateUI(reCaptchaWrapper);
-                } else {
-                    setTimeout(checkVisibility, 100);
-                }
-            })();
+                        </div>
+                        <div class="single-step mt-2 mt-sm-0">
+                            <span>3</span>Choose the best offer
+                        </div>
+                    </div>
+                    <div class="row border-bottom gx-0 px-4">
+                        <div class="col-lg-6 border-end ">
+                            <div class="calculator-slider pt-40 pb-5 ps-md-4 pe-md-5 px-1">
+                                <label>Loan Amount</label>
+                                <div class="d-flex align-items-center">
+                                    <div class="range-slider" id="SliderAmount"></div>
+                                    <input class="range-input" type="text" id="SetSliderAmount">
+                                </div>
+                                <span class="range">Min $5,000 - Max $250,000</span>
+                            </div>
 
-            // start captcha challenge after loads all scripts
-            setTimeout(executeCaptcha, 2000);
-        }
+                        </div>
+                        <div class="col-lg-6">
+                            <div class="calculator-slider pt-40 pb-5 ps-md-4 ps-lg-5 pe-md-4 px-1">
+                                <label class="label-2">Loan Period</label>
+                                <div class="d-flex align-items-center">
+                                    <div class="range-slider" id="SliderPeriod"></div>
+                                    <input class="range-input" type="text" id="SetSliderPeriod">
+                                </div>
 
-    });
+                                <span class="range">Min 1 year - Max 5 years</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="expected-payment mt-50 mr-30 ml-30 mb-50">
+                        <div class="bg_disable d-flex justify-content-between flex-wrap sec-head align-items-center">
+                            <div>
+                                <h5>Expected monthly payment</h5>
+                                <p>Based on 7% borrowing rate</p>
+                            </div>
+                            <h4 class="mb-0">$1,162 / month</h4>
+                        </div>
+                        <p class="text mx-sm-4 mt-20">Price example: Total credit amount USD $100,000 - Maturity 120
+                            months
+                            -
+                            Variable
+                            borrowing
+                            rate 7% - APR 7.24% - Etb. USD $1,000 - Total repayment: USD $140,190 - Total credit costs:
+                            USD $40,190 - 14-day right of withdrawal</p>
 
-</script>
+                        <div class="text-center mt-45">
+                            <a href="loan-details.html" class="theme-btn theme-btn-rounded"> Next <i
+                                    class='arrow_right'></i> </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Feature and Calculator end -->
 
+        <!-- Help Advertisement start -->
+        <section class="help-ad-area pt-125 pb-115 overflow-hidden">
+            <div class="container">
+                <div class="section-title">
+                    <h2>We Have Helped More Than 10,000 Users</h2>
+                </div>
+
+                <div class="row pt-40">
+                    <div class="col-lg-10 mx-auto">
+                        <div class="row">
+                            <div class="col-12">
+                                <img class="main-img img-fluid" src="img/help-ad/img-1.png" alt="img">
+                            </div>
+                            <div class="col-lg-5">
+                                <div class="offers">
+                                    <ul>
+                                        <li> <span><i class="icon_check"></i></span> Offers from several banks</li>
+                                        <li> <span><i class="icon_check"></i></span> Free & no obligation </li>
+                                        <li> <span><i class="icon_check"></i></span> Compare safely and securely</li>
+                                        <li> <span><i class="icon_check"></i></span> Offer within a few hours</li>
+                                    </ul>
+                                    <div class="shape"> <img src="img/help-ad/shape.png" alt="shape"></div>
+                                </div>
+                            </div>
+                            <div class="col-lg-7">
+                                <p class="pt-lg-60">Compare multiple banks with just one non-binding application.
+                                    We save you the hassle of checking the price at each bank.</p>
+                                <p class="py-4">It takes 2 min. To fill out the application, you immediately get quotes
+                                    from banks
+                                    and can
+                                    choose the best quote.</p>
+                                <p> We save you not only time, but in many cases also many thousands of kroner.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Help Advertisement end -->
+
+        <!-- Banca Corporate Companys start -->
+        <section class="banca-corporate bg_white pt-125 pb-110">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 mx-auto">
+                        <div class="section-title">
+                            <h2 class="wow fadeInUp">Banca Cooperates With These Banks</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.3s"> <span>3000+ Companies</span> Trust
+                                Sturtaplanding to build
+                                landing page for their <span> dream product</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="row justify-content-between mt-35 gy-sm-0 gy-4  text-center text-lg-start">
+                    <div class="col-lg-2 col-6">
+                        <a href="#" class="single-brand wow fadeInRight" data-wow-delay="0.1s">
+                            <img class="img-fluid" src="img/banca-corporate/logo-1.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <a href="#" class="single-brand wow fadeInRight" data-wow-delay="0.3s">
+                            <img class="img-fluid" src="img/banca-corporate/logo-2.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <a href="#" class="single-brand wow fadeInRight" data-wow-delay="0.5s">
+                            <img class="img-fluid" src="img/banca-corporate/logo-3.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <a href="#" class="single-brand wow fadeInRight" data-wow-delay="0.7s">
+                            <img class="img-fluid" src="img/banca-corporate/logo-4.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-6 d-none d-lg-block">
+                        <a href="#" class="single-brand wow fadeInRight" data-wow-delay="0.9s">
+                            <img class="img-fluid" src="img/banca-corporate/logo-5.png" alt="logo">
+                        </a>
+                    </div>
+
+                </div>
+                <div class="row justify-content-between gy-sm-0 gy-4 mt-20 text-center text-lg-start">
+                    <div class="col-lg-2 col-6">
+                        <a href="#" class="single-brand wow fadeInRight" data-wow-delay="0.1s">
+                            <img class="img-fluid" src="img/banca-corporate/logo-1.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <a href="#" class="single-brand wow fadeInRight" data-wow-delay="0.3s">
+                            <img class="img-fluid" src="img/banca-corporate/logo-2.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <a href="#" class="single-brand wow fadeInRight" data-wow-delay="0.5s">
+                            <img class="img-fluid" src="img/banca-corporate/logo-3.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-6">
+                        <a href="#" class="single-brand wow fadeInRight" data-wow-delay="0.7s">
+                            <img class="img-fluid" src="img/banca-corporate/logo-4.png" alt="logo">
+                        </a>
+                    </div>
+                    <div class="col-lg-2 col-6 d-none d-lg-block">
+                        <a href="#" class="single-brand wow fadeInRight" data-wow-delay="0.9s">
+                            <img class="img-fluid" src="img/banca-corporate/logo-5.png" alt="logo">
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Banca Corporate Companys end -->
+
+        <!-- Articales start -->
+        <section class="articles-area pt-125 pb-140">
+            <div class="container">
+                <div class="section-title d-flex flex-wrap justify-content-between text-start align-items-center">
+                    <h2 class="mb-3 mb-sm-0 wow fadeInRight">More About Finance & Loans</h2>
+                    <a class="wow fadeInLeft" href="blog.html">See All Articles <i class="arrow_right"></i></a>
+                </div>
+                <div class="row mt-60 gy-4 gy-lg-0">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-widget-1 wow fadeInUp" data-wow-delay="0.1s">
+                            <img class="w-100" src="img/blog/article-1.png" alt="news image">
+                            <div class="blog-content pr-10 pl-10">
+                                <h6><a href="blog-details.html">Credit rating as a private customer</a></h6>
+                                <div class="blog-date">
+                                    <i class="icon_calendar"></i>
+                                    <span>February 25, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-widget-1 wow fadeInUp" data-wow-delay="0.3s">
+                            <img class="w-100" src="img/blog/article-2.png" alt="news image">
+                            <div class="blog-content pr-10 pl-10">
+                                <h6><a href="blog-details.html">Get hold of your private loans with a promissory</a>
+                                </h6>
+                                <div class="blog-date">
+                                    <i class="icon_calendar"></i>
+                                    <span>February 25, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-widget-1 wow fadeInUp" data-wow-delay="0.5s">
+                            <img class="w-100" src="img/blog/article-3.png" alt="news image">
+                            <div class="blog-content pr-10 pl-10">
+                                <h6><a href="blog-details.html">What is APR and what can you actually use it?</a></h6>
+                                <div class="blog-date">
+                                    <i class="icon_calendar"></i>
+                                    <span>February 25, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="blog-widget-1 wow fadeInUp" data-wow-delay="0.7s">
+                            <img class="w-100" src="img/blog/article-4.png" alt="news image">
+                            <div class="blog-content pr-10 pl-10">
+                                <h6><a href="blog-details.html">Superfast loans for your dream home</a></h6>
+                                <div class="blog-date">
+                                    <i class="icon_calendar"></i>
+                                    <span>February 25, 2021</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Articales end -->
+
+        <!-- Testimonial start -->
+        <section class="testimonial-area pt-135 pb-140 bg_white">
+            <div class="container">
+                <div class="section-title d-md-none mb-4">
+                    <h2>What Our Customers Are Saying</h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-4 col-md-6 pr-lg-35">
+                        <div class="testimonial-slider-3">
+
+                            <div class="testimonial-widget-3 wow fadeInLeft">
+                                <div class="client-img">
+                                    <img src="img/testimonial/client-4.png" alt="client">
+                                    <a class="play-btn" data-fancybox
+                                        href="https://www.youtube.com/watch?v=xcJtL7QggTI">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                    <p class="caption">Best service and smooth process. Keep going on Banca team. Thank
+                                        you for immediate response on each stage of process. Kudos the whole team.</p>
+                                </div>
+                                <div class="client-info">
+                                    <h6>Linda Lawrence</h6>
+                                    <span>UI/UX Designer</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-widget-3 wow fadeInLeft">
+                                <div class="client-img">
+                                    <img src="img/testimonial/client-1.png" alt="client">
+                                    <a class="play-btn" data-fancybox
+                                        href="https://www.youtube.com/watch?v=xcJtL7QggTI">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                    <p class="caption">Best service and smooth process. Keep going on Banca team. Thank
+                                        you for immediate response on each stage of process. Kudos the whole team.</p>
+                                </div>
+                                <div class="client-info">
+                                    <h6>Timothy Vargas</h6>
+                                    <span>UI/UX Designer</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-widget-3 wow fadeInLeft">
+                                <div class="client-img">
+                                    <img src="img/testimonial/client-2.png" alt="client">
+                                    <a class="play-btn" data-fancybox
+                                        href="https://www.youtube.com/watch?v=xcJtL7QggTI">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                    <p class="caption">Best service and smooth process. Keep going on Banca team. Thank
+                                        you for immediate response on each stage of process. Kudos the whole team.</p>
+                                </div>
+                                <div class="client-info">
+                                    <h6>Sandra Hughes</h6>
+                                    <span>UI/UX Designer</span>
+                                </div>
+                            </div>
+                            <div class="testimonial-widget-3 wow fadeInLeft">
+                                <div class="client-img">
+                                    <img src="img/testimonial/client-3.png" alt="client">
+                                    <a class="play-btn" data-fancybox
+                                        href="https://www.youtube.com/watch?v=xcJtL7QggTI">
+                                        <i class="fas fa-play"></i>
+                                    </a>
+                                    <p class="caption">Best service and smooth process. Keep going on Banca team. Thank
+                                        you for immediate response on each stage of process. Kudos the whole team.</p>
+                                </div>
+                                <div class="client-info">
+                                    <h6>Zachary Taylo</h6>
+                                    <span>UI/UX Designer</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="col-lg-8 col-md-6 ">
+                        <div class="h-100 d-flex flex-column justify-content-between">
+                            <div class="section-title text-start d-none d-md-block">
+                                <h2 class="wow fadeInRight">What Our Customers <br> Are Saying</h2>
+                            </div>
+                            <div class="testimonial-slider-2">
+
+                                <div class="testimonial-widget-2 wow fadeInUp" data-wow-delay="0.1s">
+                                    <img src="img/testimonial/client-1.png" alt="client">
+                                    <div class="client-info">
+                                        <p>Timothy Vargas</p>
+                                        <span>UI/UX Designer</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial-widget-2 wow fadeInUp" data-wow-delay="0.3s">
+                                    <img src="img/testimonial/client-2.png" alt="client">
+                                    <div class="client-info">
+                                        <p>Sandra Hughes</p>
+                                        <span>UI/UX Designer</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial-widget-2 wow fadeInUp" data-wow-delay="0.5s">
+                                    <img src="img/testimonial/client-3.png" alt="client">
+                                    <div class="client-info">
+                                        <p>Zachary Taylo</p>
+                                        <span>UI/UX Designer</span>
+                                    </div>
+                                </div>
+                                <div class="testimonial-widget-2 wow fadeInUp" data-wow-delay="0.7s">
+                                    <img src="img/testimonial/client-4.png" alt="client">
+                                    <div class="client-info">
+                                        <p>Linda Lawrence</p>
+                                        <span>UI/UX Designer</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Testimonial end -->
+
+        <!-- Advisor start -->
+        <section class="advisor-area pt-130  pb-140 overflow-hidden" id="MouseMoveAnimation">
+            <div class="container">
+                <div class="row gy-4 gy-lg-0">
+                    <div class="col-lg-6 pr-lg-75">
+                        <div class="section-title text-start">
+                            <h2 class="mb-0 wow fadeInUp">Our Advisors Are Ready To Help You</h2>
+                        </div>
+
+                        <div class="advisor-img mt-45 wow fadeInUp" data-wow-delay="0.2s">
+
+                            <div class="shape ">
+                                <div class="box">
+                                    <img class="layer layer2" data-depth="0.5" src="img/faq/Shape.png" alt="shape">
+                                </div>
+                                <div class="circle-shape"></div>
+                            </div>
+                            <img class="main-img" src="img/faq/advisor.png" alt="advisor">
+
+                            <div class="work-time">
+                                <div class="circle-shape"></div>
+                                All weekdays <span>10.00 - 18.00</span>
+                            </div>
+                        </div>
+
+                        <div class="row mt-4 gy-md-0 gy-3 wow fadeInUp" data-wow-delay="0.4s">
+                            <div class="col-md-6">
+                                <a href="tel:01234567890"
+                                    class="theme-btn theme-btn-primary_alt theme-btn-rounded d-flex align-items-center justify-content-center">
+                                    <i class="icon_phone"></i> 01234-567890</a>
+                            </div>
+                            <div class="col-md-6">
+                                <a href="mailto:bancainfo@email.com"
+                                    class="theme-btn theme-btn-primary_alt theme-btn-rounded d-flex align-items-center justify-content-center">
+                                    <i class="icon_mail_alt "></i> info@banca.com</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="faq-widget-2">
+                            <div class="accordion" id="accordionExample">
+                                <div class="single-widget-one wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="faq-header" id="headingOne">
+                                        <h6 class="mb-0 collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseOne" aria-expanded="true"
+                                            aria-controls="collapseOne">
+                                            How much can I borrow?<i class="icon_plus"></i><i class="icon_close"></i>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="faq-body">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry
+                                                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                                dolor brunch.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-widget-one wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="faq-header" id="headingTwo">
+                                        <h6 class="mb-0" data-bs-toggle="collapse" data-bs-target="#collapseTwo"
+                                            aria-expanded="true" aria-controls="collapseTwo">
+                                            What are the requirements to get a loan offer?<i class="icon_plus"></i><i
+                                                class="icon_close"></i>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="faq-body">
+                                            <p>- You must be at least 18 years old <br>
+                                                - You must have permanent residence in United States <br>
+                                                - You are not registered in the RKI / Debtor Register (DBR) <br>
+                                                <br>
+                                                The offers you receive are preliminary offers, which are provided that
+                                                the information you have entered, are correct.<br><br>
+
+                                                At the same time, you must sign the loan offer with NemID before the
+                                                bank can pay out your loan.
+                                            </p>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-widget-one wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="faq-header" id="headingThree">
+                                        <h6 class="mb-0 collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseThree" aria-expanded="true"
+                                            aria-controls="collapseThree">
+                                            How can I borrow money ASAP?<i class="icon_plus"></i><i
+                                                class="icon_close"></i>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="faq-body">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry
+                                                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                                dolor brunch.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-widget-one wow fadeInUp" data-wow-delay="0.7s">
+                                    <div class="faq-header" id="headingFour">
+                                        <h6 class="mb-0 collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFour" aria-expanded="true"
+                                            aria-controls="collapseFour">
+                                            How can you reduce the cost of my loans?<i class="icon_plus"></i><i
+                                                class="icon_close"></i>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseFour" class="collapse" aria-labelledby="headingFour"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="faq-body">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry
+                                                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                                dolor brunch.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-widget-one wow fadeInUp" data-wow-delay="0.9s">
+                                    <div class="faq-header" id="headingFive">
+                                        <h6 class="mb-0 collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseFive" aria-expanded="true"
+                                            aria-controls="collapseFive">
+                                            What does it cost to use Banca?<i class="icon_plus"></i><i
+                                                class="icon_close"></i>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseFive" class="collapse" aria-labelledby="headingFive"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="faq-body">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry
+                                                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                                dolor brunch.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-widget-one wow fadeInUp" data-wow-delay="1.1s">
+                                    <div class="faq-header" id="headingSix">
+                                        <h6 class="mb-0 collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSix" aria-expanded="true"
+                                            aria-controls="collapseSix">
+                                            When is the loan paid out?<i class="icon_plus"></i><i
+                                                class="icon_close"></i>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseSix" class="collapse" aria-labelledby="headingSix"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="faq-body">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry
+                                                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                                dolor brunch.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="single-widget-one wow fadeInUp" data-wow-delay="1.3s">
+                                    <div class="faq-header" id="headingSeven">
+                                        <h6 class="mb-0 collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseSeven" aria-expanded="true"
+                                            aria-controls="collapseSeven">
+                                            How long is the repayment period?<i class="icon_plus"></i><i
+                                                class="icon_close"></i>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseSeven" class="collapse" aria-labelledby="headingSeven"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="faq-body">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry
+                                                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                                dolor brunch.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-widget-one wow fadeInUp" data-wow-delay="1.5s">
+                                    <div class="faq-header" id="headingEight">
+                                        <h6 class="mb-0 collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseEight" aria-expanded="true"
+                                            aria-controls="collapseEight">
+                                            Can I redeem the loan ahead of time?<i class="icon_plus"></i><i
+                                                class="icon_close"></i>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseEight" class="collapse" aria-labelledby="headingEight"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="faq-body">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry
+                                                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                                dolor brunch.</p>
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="single-widget-one wow fadeInUp" data-wow-delay="1.7s">
+                                    <div class="faq-header" id="headingNine">
+                                        <h6 class="mb-0 collapsed" data-bs-toggle="collapse"
+                                            data-bs-target="#collapseNine" aria-expanded="true"
+                                            aria-controls="collapseNine">
+                                            Can I change my application after submitting it?<i class="icon_plus"></i><i
+                                                class="icon_close"></i>
+                                        </h6>
+                                    </div>
+                                    <div id="collapseNine" class="collapse" aria-labelledby="headingNine"
+                                        data-bs-parent="#accordionExample">
+                                        <div class="faq-body">
+                                            <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
+                                                terry
+                                                richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard
+                                                dolor brunch.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Advisor end -->
+
+        <!-- Call To Action start -->
+        <section class="help-cta pt-75 pb-90" style="background-image: url(img/help-ad/bg-shape.png);">
+            <div class="container">
+                <div class="section-title">
+                    <h2>We Help With Both New Loan And Collective Loan</h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-8 mx-auto text-center">
+
+                        <p>Whether you need to borrow for renovation, car, holiday or want to combine your loans into
+                            one single loan, we will help you</p>
+                        <div class="mt-40">
+                            <a href="loan.html" class="theme-btn theme-btn-rounded me-sm-4 mt-3 mt-sm-0">New Loan</a>
+                            <a href="loan-details.html"
+                                class="theme-btn theme-btn-rounded theme-btn-alt mt-3 mt-sm-0">Collective
+                                Loan</a>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Call To Action end -->
+    </main>
+
+    <!-- footer -->
+    <footer class="footer footer-2 pt-lg-130 pt-110 pb-100 pb-lg-125"
+        style="background-image: url(img/footer/footer-bg-2.png);">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-3  col-sm-6 text-center text-sm-start">
+                        <div class="footer-widget mb-30 wow fadeInLeft">
+                            <h4 class="mb-20">We're on a mission.</h4>
+                            <div class="footer-text mb-20">
+                                <p>At Banca, we're using cutting-edge technology to transform the industry and deliver
+                                    financial services that actually work for you.</p>
+                            </div>
+                            <div class="truspilot mt-40">
+                                <img src="img/footer/Trustpilot.png" alt="Trustpilot">
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3  col-sm-6 text-center text-sm-start offset-lg-1">
+                        <div class="footer-widget mb-30 wow fadeInUp" data-wow-delay="0.1s">
+                            <div class="f-widget-title">
+                                <h5>Company</h5>
+                            </div>
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="#">About Us</a></li>
+                                    <li><a href="#">Recognition</a></li>
+                                    <li><a href="#">Executive Team</a></li>
+                                    <li><a href="#">Careers</a></li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+
+
+
+                    <div class="col-lg-3  col-sm-6 text-center text-sm-start">
+                        <div class="footer-widget mb-30 wow fadeInUp" data-wow-delay="0.3s">
+                            <div class="f-widget-title">
+                                <h5>product</h5>
+                            </div>
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="#"> Business Loans | Main</a></li>
+                                    <li><a href="#"> Loan Calculator</a></li>
+                                    <li><a href="#"> Refer a Friend</a></li>
+                                    <li><a href="#"> Partner Program</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-2  col-sm-6 text-center text-sm-start">
+                        <div class="footer-widget mb-30 wow fadeInUp" data-wow-delay="0.5s">
+                            <div class="f-widget-title">
+                                <h5>Help</h5>
+
+
+
+                            </div>
+                            <div class="footer-link">
+                                <ul>
+                                    <li><a href="#">Customer Care</a></li>
+                                    <li><a href="#"> Contact Us</a></li>
+                                    <li><a href="#">Security Center</a></li>
+                                    <li><a href="#">Blog</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright pt-45">
+            <div class="container">
+                <div class="row ">
+                    <div class="col-xl-8 offset-xl-4">
+                        <div class="row align-items-center gy-lg-0 gy-3 gx-0">
+                            <div class="col-md-2  text-md-start text-center">
+                                <a href="index.html"><img src="img/logo/Logo.png" alt="logo"></a>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="line"></div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="social-button text-center">
+                                    <a class="ms-0" href="#"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="#"><i class="fab fa-twitter"></i></a>
+                                    <a href="#"><i class="fab fa-pinterest-p"></i></a>
+                                    <a class="me-0" href="#"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="copyright-text text-md-start text-center">
+                                <p>Copyright&copy; Banca 2023.<br class="d-sm-none"> <a class="ms-3"
+                                        href="#">Privecy</a> | <a class="ms-0" href="#">Term
+                                        of Use</a> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- footer end -->
+
+    <!-- Back to top button -->
+    <a id="back-to-top" title="Back to Top"></a>
+
+    <!-- JS here -->
+    <script type="text/javascript" src="js/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="js/preloader.js"></script>
+    <script type="text/javascript" src="js/bootstrap.bundle.min.js"></script>
+    <script type="text/javascript" src="js/jquery.smoothscroll.min.js"></script>
+    <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+    <script type="text/javascript" src="js/slick.min.js"></script>
+    <script type="text/javascript" src="js/nouislider.min.js"></script>
+    <script type="text/javascript" src="js/wNumb.js"></script>
+    <script type="text/javascript" src="js/parallax.js"></script>
+    <script type="text/javascript" src="js/jquery.parallax-scroll.js"></script>
+    <script type="text/javascript" src="js/wow.min.js"></script>
+    <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
+    <script type="text/javascript" src="js/custom.js"></script>
 </body>
 
-<!-- Mirrored from html-template.spider-themes.net/banca/index-simple.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 18 Jan 2024 09:29:23 GMT -->
 </html>
