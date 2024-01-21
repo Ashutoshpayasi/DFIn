@@ -4879,7 +4879,7 @@ header .header-top .header-info-right ul li i {
 }
 
 .services-area .table .feature-item .theme-btn span {
-  text-decoration: underline;
+  /* text-decoration: underline; */
 }
 
 .services-area .table td,

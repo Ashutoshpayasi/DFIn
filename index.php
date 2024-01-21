@@ -39,7 +39,6 @@
             transition: all linear 0.3s;
         }
 
-
         .sidebar-fixed:hover {
             position: fixed;
             z-index: 9999;
@@ -243,7 +242,7 @@
                     <div class="col-6">
 
                     </div>
-                    <div class="col-lg-6 banner-form">
+                    <!-- <div class="col-lg-6 banner-form">
                         <div class="basic-loan-calculator wow fadeInLeft" data-wow-delay="0.1s">
                             <h4>Loan calculator</h4>
                             <form action="#" class="d-flex flex-column">
@@ -270,7 +269,7 @@
                                 <button type="submit" class="theme-btn w-100">Apply for loans</button>
                             </form>
                         </div>
-                    </div>
+                    </div> -->
                 </div>
             </div>
 
