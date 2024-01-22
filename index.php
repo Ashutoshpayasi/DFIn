@@ -114,7 +114,7 @@
                     <a href=""><i class="fab fa-linkedin"></i>LinkedIn</a>
                 </div>
                 <div href="#" class="whatsapp">
-                    <a href=""><i class="fab fa-whatsapp"></i>WhatsApp</a>
+                    <a href="https://api.whatsapp.com/send/?phone=7666456868&text=hijijij&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i>WhatsApp</a>
                 </div>
                 <div href="#" class="instagram">
                     <a href=""><i class="fab fa-instagram"></i>Instagram</a>
@@ -284,7 +284,7 @@
                 <div class="row">
                     <div class="col-lg-6 mx-auto  pb-55">
                         <div class="section-title">
-                            <span class="short-title-2">_OUR PROCESS</span>
+                            <span class="short-title-2">OUR PROCESS</span>
                             <h1 class="wow fadeInUp">3 <span class="underline-shape">steps</span> to follow</h1>
                             <p class="wow fadeInUp" data-wow-delay="0.3s">There are many variations of passages of Lorem
                                 Ipsum available,
@@ -309,7 +309,7 @@
                             <div class="card-img">
                                 <img src="img/home-4/step-icon-02.svg" alt="feature svg">
                             </div>
-                            <h4>Get approved</h4>
+                            <h4>Get approved <br> (As Per Product norms)</h4>
                             <p>Quis dapibus volutpat condimentum
                                 quam sed non elit sed magna lectus dui interdum facilisi justo
                             </p>
@@ -339,7 +339,7 @@
             <div class="container">
                 <div class="section-title mb-45">
                     <span class="short-title-2">DFin Services</span>
-                    <h1>Why Choose <span style="color:#0050B2;">DFin</span></h1>
+                    <h1>Why Choose <span style="color:#e75480;">DFin</span></h1>
                     <p>There are many variations of passages of Lorem Ipsum available,<br>
                         but the majority have suffered alteration in some form,</p>
                 </div>
@@ -356,14 +356,14 @@
                         <tbody>
                             <tr>
                                 <th class="feature-head" scope="col">Payment Per Transaction</th>
-                                <td class="feature-item">0.50/per transacrion</td>
-                                <td class="feature-item">1.50/per transaction</td>
+                                <td class="feature-item">0.25/per transaction</td>
+                                <td class="feature-item">0.75/per transaction</td>
                             </tr>
-                            <tr>
+                            <!-- <tr>
                                 <th class="feature-head" scope="row">Bank account limitations</th>
                                 <td class="feature-item">up to 10 bank accounts</td>
                                 <td class="feature-item">Only 3 bank accounts</td>
-                            </tr>
+                            </tr> -->
                             <tr>
                                 <th class="feature-head" scope="row">Local fees capped at NGN 2,000</th>
                                 <td class="feature-item"> <i class="fas fa-check-circle"></i> </td>
@@ -375,7 +375,7 @@
                                 <td class="feature-item">complicated steps</td>
                             </tr>
                             <tr>
-                                <th class="feature-head" scope="row">Debt Financing</th>
+                                <th class="feature-head" scope="row">Debt Consolidate</th>
                                 <td class="feature-item"> <i class="fas fa-check-circle"></i> </td>
                                 <td class="feature-item"> <i class="fas fa-times-circle"></i></td>
                             </tr>
@@ -384,11 +384,11 @@
                                 <td class="feature-item"> <i class="fas fa-check-circle"></i> </td>
                                 <td class="feature-item"> <i class="fas fa-times-circle"></i></td>
                             </tr>
-                            <tr>
+                            <!-- <tr>
                                 <th class="feature-head" scope="row">Local fees capped</th>
                                 <td class="feature-item"> <i class="fas fa-check-circle"></i> </td>
                                 <td class="feature-item"> <i class="fas fa-times-circle"></i></td>
-                            </tr>
+                            </tr> -->
                             <tr>
                                 <th class="feature-head bg-transparent" scope="row"></th>
                                 <td class="feature-item p-0 bg-transparent"><a href="#" class="theme-btn"><span>Get
@@ -438,7 +438,7 @@
                                     <div id="RangeSlider"></div>
                                     <div class="input-group">
                                         <input class="noTextMerge" type="text" id="SetRange">
-                                        <span class="input-group-text">$</span>
+                                        <span class="input-group-text">₹</span>
                                     </div>
                                 </div>
                                 <div class="range-label">Interest Rate</div>
@@ -449,7 +449,7 @@
                                         <span class="input-group-text">%</span>
                                     </div>
                                 </div>
-                                <div class="range-label">Loan Duration</div>
+                                <!-- <div class="range-label">Loan Duration</div> -->
                                 <div class="single-range">
                                     <div class="tab-content">
                                         <div class="tab-pane fade show active" id="yearTab" role="tabpanel" aria-labelledby="yearTab">
@@ -462,12 +462,12 @@
                                             <div id="WeekRangeSlider"></div>
                                         </div>
                                     </div>
-                                    <div class="input-group">
+                                    <!-- <div class="input-group">
                                         <input class="noTextMerge" type="text" id="SetMonthRange">
                                         <span class="input-group-text loanTermIndicator">@example.com</span>
-                                    </div>
+                                    </div> -->
                                 </div>
-                                <div class="d-flex loan-start-date">
+                                <!-- <div class="d-flex loan-start-date">
                                     <div>
                                         <div class="range-label">Start Date</div>
                                         <div class="inp-container">
@@ -480,7 +480,7 @@
                                             <input type="text" id="loanEndDate" placeholder="Select Date">
                                         </div>
                                     </div>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
 
@@ -553,7 +553,10 @@
                                     <img src="img/how-works/icon-1.png" alt="icon">
                                 </div>
                                 <div class="widget-title">
-                                    <h4>Apply Online</h4>
+                                    <a href="https://api.whatsapp.com/send/?phone=7666456868&text=hijijij&type=phone_number&app_absent=0">
+                                        <h4>Apply Online</h4>
+                                    </a>
+
                                     <p>That is why we have a wide range of you can apply for a Personal Loan.</p>
                                 </div>
                             </div>
@@ -563,9 +566,9 @@
                                 </li>
                                 <li> <span class="number">2</span> <span class="text">Enter Your Informantion - 10
                                         min</span> </li>
-                                <li> <span class="number">3</span> <span class="text">Pre-qualify / Pre-Approve - 5
+                                <!-- <li> <span class="number">3</span> <span class="text">Pre-qualify / Pre-Approve - 5
                                         min</span> </li>
-                                <li> <span class="number">4</span> <span class="text">Help you prepare</span> </li>
+                                <li> <span class="number">4</span> <span class="text">Help you prepare</span> </li> -->
                                 <li> <span class="number">5</span> <span class="text">We help your qualify - 15
                                         days</span></li>
                             </ul>
@@ -579,7 +582,10 @@
                                     <img src="img/how-works/icon-2.png" alt="icon">
                                 </div>
                                 <div class="widget-title">
-                                    <h4>Consultation</h4>
+                                    <a href="
+https://api.whatsapp.com/send/?phone=7666456868&text=hijijij&type=phone_number&app_absent=0">
+                                        <h4>Consultation</h4>
+                                    </a>
                                     <p>Conis Guide on the supervisory approach to consolidation in the banking sector.
                                     </p>
                                 </div>
@@ -592,8 +598,8 @@
                                 </li>
                                 <li> <span class="number">3</span> <span class="text">We Review your condition </span>
                                 </li>
-                                <li> <span class="number">4</span> <span class="text">Help you prepare</span> </li>
-                                <li> <span class="number">5</span> <span class="text">We help your qualify</span> </li>
+                                <!-- <li> <span class="number">4</span> <span class="text">Help you prepare</span> </li>
+                                <li> <span class="number">5</span> <span class="text">We help your qualify</span> </li> -->
                             </ul>
                         </div>
                     </div>
@@ -678,7 +684,7 @@
                                     <div class="w-100">
                                         <div class="faq-header" id="headingFour">
                                             <h4 class="mb-0 collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                                Can I do all of my banking with you?<i class="icon_plus"></i><i class=" icon_minus-06"></i>
+                                                Can I do financing requirement with you?<i class="icon_plus"></i><i class=" icon_minus-06"></i>
                                             </h4>
                                         </div>
                                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
@@ -710,7 +716,7 @@
         <section class="client-area-2 pt-60 pb-60">
             <div class="container">
                 <div class="section-title">
-                    <span class="short-title-2">_Testimonials</span>
+                    <span class="short-title-2">Testimonials</span>
                     <h1 class="wow fadeInUp mb-3">Customer <span class="underline-shape">feedbacks</span></h1>
                     <p class="wow fadeInUp" data-wow-delay="0.1s">There are many variations of passages of Lorem Ipsum
                         available, <br>
