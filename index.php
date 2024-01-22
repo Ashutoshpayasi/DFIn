@@ -165,9 +165,7 @@
                                             solutions for your
                                             <span class="underline-shape">business</span>
                                         </h1>
-                                        <p>Inventore veritatis et architecto beatae vitae dicta explicabo nemo enim
-                                            ipsam voluptatem
-                                            quia voluptas aspernatur magni .</p>
+                                        <p>Discover innovative solutions for your financial needs.</p>
 
                                         <div class="d-flex flex-wrap mt-40">
                                             <a href="#" class="theme-btn me-4">Get started now</a>
@@ -185,13 +183,10 @@
                             <div class="row align-items-end pt-170 pb-120">
                                 <div class="col-lg-6">
                                     <div class="banner-content wow fadeInRight" data-wow-delay="0.1s">
-                                        <h1>Smart finance
-                                            solutions for your
-                                            <span class="underline-shape">business</span>
+                                        <h1>Empower Your Business with
+                                            <span>Financial Excellence</span>
                                         </h1>
-                                        <p>Inventore veritatis et architecto beatae vitae dicta explicabo nemo enim
-                                            ipsam voluptatem
-                                            quia voluptas aspernatur magni .</p>
+                                        <p>Discover new possibilities and navigate financial success with our innovative solutions.</p>
 
                                         <div class="d-flex flex-wrap mt-40">
                                             <a href="#" class="theme-btn me-4">Get started now</a>
@@ -209,13 +204,10 @@
                             <div class="row align-items-end pt-170 pb-120">
                                 <div class="col-lg-6">
                                     <div class="banner-content wow fadeInRight" data-wow-delay="0.1s">
-                                        <h1>Smart finance
-                                            solutions for your
-                                            <span class="underline-shape">business</span>
+                                        <h1>Transform Your Finances with
+                                            <span class="underline-shape"></span>Innovative Solutions
                                         </h1>
-                                        <p>Inventore veritatis et architecto beatae vitae dicta explicabo nemo enim
-                                            ipsam voluptatem
-                                            quia voluptas aspernatur magni .</p>
+                                        <p>Explore our tailored financial services designed to elevate your business.</p>
 
                                         <div class="d-flex flex-wrap mt-40">
                                             <a href="#" class="theme-btn me-4">Get started now</a>
@@ -284,11 +276,9 @@
                 <div class="row">
                     <div class="col-lg-6 mx-auto  pb-55">
                         <div class="section-title">
-                            <span class="short-title-2">OUR PROCESS</span>
+                            <!-- <span class="short-title-2">OUR PROCESS</span> -->
                             <h1 class="wow fadeInUp">3 <span class="underline-shape">steps</span> to follow</h1>
-                            <p class="wow fadeInUp" data-wow-delay="0.3s">There are many variations of passages of Lorem
-                                Ipsum available,
-                                but the majority have suffered alteration in some form,</p>
+                            <p class="wow fadeInUp" data-wow-delay="0.3s">Explore our streamlined process to secure the financial assistance you need.</p>
                         </div>
                     </div>
                 </div>
@@ -299,8 +289,7 @@
                                 <img src="img/home-4/step-icon-01.svg" alt="feature svg">
                             </div>
                             <h4>Apply for loan</h4>
-                            <p>Quis dapibus volutpat condimentum
-                                quam sed non elit sed magna lectus dui interdum facilisi justo
+                            <p>Get started with ease loan effortlessly and experience a streamlined process.
                             </p>
                         </div>
                     </div>
@@ -309,9 +298,8 @@
                             <div class="card-img">
                                 <img src="img/home-4/step-icon-02.svg" alt="feature svg">
                             </div>
-                            <h4>Get approved <br> (As Per Product norms)</h4>
-                            <p>Quis dapibus volutpat condimentum
-                                quam sed non elit sed magna lectus dui interdum facilisi justo
+                            <h4>Get approved <br> (As Per Product Norms)</h4>
+                            <p>Experience a swift approval process tailored to product norms.
                             </p>
                         </div>
                     </div>
@@ -321,8 +309,7 @@
                                 <img src="img/home-4/step-icon-03.svg" alt="feature svg">
                             </div>
                             <h4>Get your money</h4>
-                            <p>Quis dapibus volutpat condimentum
-                                quam sed non elit sed magna lectus dui interdum facilisi justo
+                            <p>Receive your funds quickly and securely.
                             </p>
                         </div>
                     </div>
@@ -340,8 +327,9 @@
                 <div class="section-title mb-45">
                     <span class="short-title-2">DFin Services</span>
                     <h1>Why Choose <span style="color:#e75480;">DFin</span></h1>
-                    <p>There are many variations of passages of Lorem Ipsum available,<br>
-                        but the majority have suffered alteration in some form,</p>
+                    <p>What sets DFin apart is our commitment to personalized service,<br> competitive rates, and transparent processes.
+                        Unlike other financial services, we prioritize<br>your unique needs and tailoring solutions that best fit your financial goals. 
+                        </p>
                 </div>
 
                 <div class="table-responsive">
@@ -718,9 +706,7 @@ https://api.whatsapp.com/send/?phone=7666456868&text=hijijij&type=phone_number&a
                 <div class="section-title">
                     <span class="short-title-2">Testimonials</span>
                     <h1 class="wow fadeInUp mb-3">Customer <span class="underline-shape">feedbacks</span></h1>
-                    <p class="wow fadeInUp" data-wow-delay="0.1s">There are many variations of passages of Lorem Ipsum
-                        available, <br>
-                        but the majority have suffered alteration in some form,</p>
+                    <p class="wow fadeInUp" data-wow-delay="0.1s">Explore what our valued customers have to say about their experiences.</p>
                 </div>
                 <div class=" client-slider-2">
                     <div class="single-client wow fadeInUp" data-wow-delay="0.1s">
