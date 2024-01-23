@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html lang="en-US">
 
@@ -25,8 +24,8 @@
 
 <body>
     <!-- Preloader -->
-   
-    <?php include "includes/header.php"?>
+
+    <?php include "includes/header.php" ?>
 
 
     <main>
@@ -64,14 +63,14 @@
                         </div>
                         <div class="col-md-8">
                             <div class="desc-text pl-lg-10">
-                                <p>Banca Bank’s journey started with a single belief to connect people,
+                                <p>DFin's journey started with a single belief to connect people,
                                     places and
                                     possibilities by doing things others said could not be done. Anchored on this
                                     belief,
                                     the Bank was founded in 2017 and we are, to date, headquartered in the Mauritius
                                     International Financial Centre with a representative office in United States.</p>
-                                <p class="mt-20">Banca Bank's core banking and transactional capabilities are also
-                                    complemented. Banca
+                                <p class="mt-20">DFin's core banking and transactional capabilities are also
+                                    complemented. DFin's
                                     experienced team and its regional foundation are complemented by the belief and
                                     trust
                                     our clients have in our ability to connect them to a global banking network to
@@ -84,7 +83,7 @@
         </section>
 
         <!-- Statistics start -->
-        <section class="statistics-area pt-135 pb-140 bg_disable">
+        <!-- <section class="statistics-area pt-135 pb-140 bg_disable">
             <div class="container">
                 <div class="row gy-lg-0 gy-4 ">
                     <div class="col-lg-7">
@@ -153,8 +152,7 @@
                     </div>
                     <div class="col-lg-5 ">
                         <div class="statistics-widget-2 wow fadeInRight" data-wow-delay="0.7s">
-                            <div class="widget-content widget-6"
-                                style="background-image: url(img/statistics/img_stat-2.png)">
+                            <div class="widget-content widget-6" style="background-image: url(img/statistics/img_stat-2.png)">
                                 <h2>Best Consumer Digital Bank</h2>
                                 <p>Global Finance 2020</p>
                             </div>
@@ -164,8 +162,7 @@
                 <div class="row gy-4 gy-md-0">
                     <div class="col-md-5">
                         <div class="statistics-widget-2 wow fadeInLeft" data-wow-delay="0.1s">
-                            <div class="widget-content widget-7"
-                                style="background-image: url(img/statistics/img-3\ \(1\).png);">
+                            <div class="widget-content widget-7" style="background-image: url(img/statistics/img-3\ \(1\).png);">
                                 <h1 class="stat-counter">35</h1>
                                 <p>Global Finance 2020</p>
                             </div>
@@ -179,8 +176,7 @@
 
                                 </div>
                                 <div class="col-7">
-                                    <div class="widget-content widget-8"
-                                        style="background-image: url(img/statistics/img-4.png);">
+                                    <div class="widget-content widget-8" style="background-image: url(img/statistics/img-4.png);">
                                         <h1 class="stat-counter">2</h1>
                                         <p>We’re listed on two of Asia’s largest stock exchanges</p>
                                     </div>
@@ -190,11 +186,11 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Statistics end -->
 
         <!-- Recgnition start -->
-        <section class="recognition-area bg_white pt-135 pb-140">
+        <section class="recognition-area bg_white pt-50 pb-50">
             <div class="container">
                 <div class="section-title text-start">
                     <span class="short-title mt-0 wow fadeInUp">
@@ -209,42 +205,34 @@
                             <div class="widget-navigation wow fadeInUp pe-lg-4" data-wow-delay="0.1s">
                                 <ul class="nav nav-tabs" id="myTab" role="tablist">
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="2020-tab" data-bs-toggle="tab" href="#twenty"
-                                            role="tab" aria-controls="twenty" aria-selected="true">2020</a>
+                                        <a class="nav-link active" id="2020-tab" data-bs-toggle="tab" href="#twenty" role="tab" aria-controls="twenty" aria-selected="true">2020</a>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="2019-tab" data-bs-toggle="tab" href="#nineteen"
-                                            role="tab" aria-controls="nineteen" aria-selected="false">2019</a>
+                                        <a class="nav-link" id="2019-tab" data-bs-toggle="tab" href="#nineteen" role="tab" aria-controls="nineteen" aria-selected="false">2019</a>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="2018-tab" data-bs-toggle="tab" href="#eighteen"
-                                            role="tab" aria-controls="eighteen" aria-selected="false">2018</a>
+                                        <a class="nav-link" id="2018-tab" data-bs-toggle="tab" href="#eighteen" role="tab" aria-controls="eighteen" aria-selected="false">2018</a>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="2017-tab" data-bs-toggle="tab" href="#seventeen"
-                                            role="tab" aria-controls="seventeen" aria-selected="false">2017</a>
+                                        <a class="nav-link" id="2017-tab" data-bs-toggle="tab" href="#seventeen" role="tab" aria-controls="seventeen" aria-selected="false">2017</a>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link " id="2016-tab" data-bs-toggle="tab" href="#sixteen"
-                                            role="tab" aria-controls="sixteen" aria-selected="false">2016</a>
+                                        <a class="nav-link " id="2016-tab" data-bs-toggle="tab" href="#sixteen" role="tab" aria-controls="sixteen" aria-selected="false">2016</a>
                                     </li>
                                     <li class="nav-item" role="presentation">
-                                        <a class="nav-link " id="2015-tab" data-bs-toggle="tab" href="#fifteen"
-                                            role="tab" aria-controls="fifteen" aria-selected="false">2015</a>
+                                        <a class="nav-link " id="2015-tab" data-bs-toggle="tab" href="#fifteen" role="tab" aria-controls="fifteen" aria-selected="false">2015</a>
                                     </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link " id="2014-tab" data-bs-toggle="tab" href="#lessfifteen"
-                                            role="tab" aria-controls="lessfifteen" aria-selected="false">2014 and
+                                    <!-- <li class="nav-item" role="presentation">
+                                        <a class="nav-link " id="2014-tab" data-bs-toggle="tab" href="#lessfifteen" role="tab" aria-controls="lessfifteen" aria-selected="false">2014 and
                                             before</a>
-                                    </li>
+                                    </li> -->
 
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-lg-4 col-7">
+                        <div class="col-lg-4 col-7 ">
                             <div class="tab-content wow fadeInUp" data-wow-delay="0.3s" id="myTabContent">
-                                <div class="tab-pane fade show active" id="twenty" role="tabpanel"
-                                    aria-labelledby="2020-tab">
+                                <div class="tab-pane fade show active" id="twenty" role="tabpanel" aria-labelledby="2020-tab">
                                     <h3>2020</h3>
                                     <p>The First Mauritian Bank to join the GRI Community</p>
                                     <p>Instant account opening with a Customer On-boarding App</p>
@@ -332,8 +320,7 @@
                         </div>
                     </div>
                     <div class="col-sm-4 text-end">
-                        <a href="#" class="theme-btn theme-btn-outlined wow fadeInLeft"> see more <i
-                                class="arrow_carrot-right "></i></a>
+                        <a href="#" class="theme-btn theme-btn-outlined wow fadeInLeft"> see more <i class="arrow_carrot-right "></i></a>
 
                     </div>
                 </div>
@@ -401,8 +388,8 @@
 
     <!-- footer -->
 
- 
-    <?php include "includes/footer.php"?>
+
+    <?php include "includes/footer.php" ?>
     <!-- footer end -->
 
     <!-- Back to top button -->

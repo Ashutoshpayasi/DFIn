@@ -1,4 +1,3 @@
-
 <!DOCTYPE HTML>
 <html lang="en-US">
 
@@ -7,32 +6,36 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>DFin - Loan Provider & Financer</title>
-
     <link rel="shortcut icon" href="img\how-works\favicon.ico" type="image/x-icon">
 
-    <!-- CSS here -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/slick.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/eleganticons@0.0.1/lte-ie7.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/eleganticons@0.0.1/css/style.min.css">
 </head>
 
 <body>
     <!-- Preloader -->
 
-    <?php include "includes/header.php"?>
+    <?php include "includes/header.php" ?>
     <!-- Header end-->
 
 
     <main>
         <!-- BreadCrumb start -->
         <section class="breadcrumb-area">
-            <div class="breadcrumb-widget  breadcrumb-widget-3 pt-200 pb-200"
-                style="background-image: url(img/breadcrumb/bg-4.jpg);">
+            <div class="breadcrumb-widget  breadcrumb-widget-3 pt-200 pb-200" style="background-image: url(img/banner/bg-4.jpg);">
 
                 <div class="container">
                     <div class="row">
@@ -69,7 +72,7 @@
                                     </div>
                                     <div>
                                         <p>Call the helpline:</p>
-                                        <span>(02) 4003 7936</span>
+                                        <span>+91 7666456868</span>
                                     </div>
                                 </div>
                             </div>
@@ -81,7 +84,7 @@
                                     </div>
                                     <div>
                                         <p>Email us:</p>
-                                        <span>hello@banca.com</span>
+                                        <span>dfincs.m@gmail.com</span>
                                     </div>
                                 </div>
                             </div>
@@ -93,7 +96,9 @@
                                     </div>
                                     <div>
                                         <p>Location</p>
-                                        <span>1550 Bryant Street STE 750, San Francisco, CA 94103</span>
+                                        <span>Raw House No. SS4/257, Xerox Lane, Sector-2 Near Abbot Hotel,Navi Mumbai</span>
+
+
                                     </div>
                                 </div>
                             </div>
@@ -118,24 +123,19 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <label for="f-name">Full Name</label>
-                                        <input type="text" id="f-name" name="name" class="form-control"
-                                            placeholder="What's your name?" required>
+                                        <input type="text" id="f-name" name="name" class="form-control" placeholder="What's your name?" required>
                                     </div>
                                     <div class="col-md-6 mt-20 mt-md-0">
                                         <label for="email-address">Email</label>
-                                        <input type="email" id='email-address' name="email" class="form-control"
-                                            placeholder="yourname@example.com" required>
+                                        <input type="email" id='email-address' name="email" class="form-control" placeholder="yourname@example.com" required>
                                     </div>
                                     <div class="col-md-12 mt-20">
                                         <label for="form-sub">Subject</label>
-                                        <input type="text" id="form-sub" name="subject" class="form-control"
-                                            placeholder="Your subject" required>
+                                        <input type="text" id="form-sub" name="subject" class="form-control" placeholder="Your subject" required>
                                     </div>
                                     <div class="col-md-12 mt-20">
                                         <label for="form-text">Messages</label>
-                                        <textarea cols="30" rows="5" name="message" id="form-text"
-                                            class="form-control pt-15" placeholder="Your message......"
-                                            required></textarea>
+                                        <textarea cols="30" rows="5" name="message" id="form-text" class="form-control pt-15" placeholder="Your message......" required></textarea>
                                     </div>
                                     <div class="col-12 mt-3">
                                         <p class="policy-text">
@@ -204,7 +204,7 @@
         <!-- need more help end -->
 
         <!-- Frequently Asked Question start -->
-        <section class="faq-area-2 pt-125 pb-200 bg_white">
+        <!-- <section class="faq-area-2 pt-125 pb-200 bg_white">
             <div class="container">
                 <div class="section-title">
                     <h2 class="wow fadeInUp">Frequently asked questions</h2>
@@ -349,7 +349,7 @@
                     </div>
                 </div>
             </div>
-        </section>
+        </section> -->
         <!-- Frequently Asked Question end -->
 
         <!-- Call To Action start -->
@@ -363,7 +363,7 @@
                             <div class="row align-items-center">
                                 <div class="col-lg-7">
                                     <div class="cta-content wow fadeInRight text-center text-lg-start">
-                                        <h2 class="mb-0">Meet Banca, the financial partner you can bank on.</h2>
+                                        <h2 class="mb-0">Meet DFin, the financial partner you can bank on.</h2>
                                     </div>
                                 </div>
 
@@ -385,8 +385,8 @@
     <!-- footer -->
 
 
-   
-    <?php include "includes/footer.php"?>
+
+    <?php include "includes/footer.php" ?>
     <!-- footer end -->
 
     <!-- Back to top button -->
@@ -403,6 +403,10 @@
     <script type="text/javascript" src="js/wow.min.js"></script>
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
+    <script>
+        
+        
+    </script>
 </body>
 
 </html>

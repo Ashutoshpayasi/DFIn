@@ -4713,7 +4713,8 @@ header .header-top .header-info-right ul li i {
 }
 
 .accolades-widget .accolades-header img {
-  margin-bottom: -1px;
+  margin-bottom: 3px;
+  margin-right: 40px;
 }
 
 .accolades-widget .accolades-header h2 {
@@ -4723,6 +4724,7 @@ header .header-top .header-info-right ul li i {
   margin-bottom: -9px;
   margin-left: 7px;
   letter-spacing: -4px;
+  padding: 10px;
 }
 
 .accolades-widget .accolades-content p {

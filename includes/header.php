@@ -38,11 +38,17 @@
         }
     </style>
 
+    
+
+
+
+    <!-- Header -->
+    <header class="header">
     <section class="bg-danger topbar">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <h1 class="d-none">Stock price ticker</h1>
+                    <!-- <h1 class="d-none">Stock price ticker</h1> -->
                     <ul class="price-ticker list-inline overflow-hidden mb-0">
                         <li class="list-inline-item">SBI<span class="badge bg-up ms-1">542.75<i class="fas fa-circle"></i></span></li>
                         <li class="list-inline-item">HDFC<span class="badge bg-down ms-1">1654.00<i class="fas fa-circle"></i></span></li>
@@ -62,10 +68,7 @@
             </div> 
         </div>
     </section>
-
-
-    <!-- Header -->
-    <header class="header">
+        
         <div class="header-menu header-menu-4" id="sticky">
             <nav class="navbar navbar-expand-lg ">
                 <div class="container">
@@ -137,8 +140,8 @@
                                 </ul> -->
                             </li>
                             <li class="nav-item dropdown submenu">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Blog
+                                <a class="nav-link dropdown-toggle" href="contact.php" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Contact Us
                                 </a>
                                 <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-bs-toggle="dropdown"></i>
                                 <!-- <ul class="dropdown-menu ">

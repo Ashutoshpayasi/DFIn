@@ -6,7 +6,7 @@
                     <div class="col-lg-4 col-sm-6 text-center text-sm-start ms-0 ">
                         <div class="footer-widget wow fadeInLeft mb-30">
                             <div class="footer-text mb-20">
-                                <p>DFin is a leading loan provider in the Mumbai
+                                <p>DFin is a leading loan provider in the Mumbai(Maharasthra)
                                 </p>
                             </div>
 
@@ -16,11 +16,13 @@
                                 <span class="counter">$<span>35.105</span> </span>
                                 <span class="counter">-<span>0.46</span>% </span>
                             </div> -->
-                            <p class="text-white"> +91 7666456868 <br>dfincs.m@gmail.com
-                            </p>
+                            
+                            
                             <p class="text-white">Raw House No. SS4/257</p>
                             <p class="text-white">Xerox Lane ,Near Abbot Hotel</p>
                             <p class="text-white">Sector-2,Navi Mumbai</p>
+                            <p class="text-white"> +91 7666456868 <br>dfincs.m@gmail.com
+                            </p>
 
 
                         </div>

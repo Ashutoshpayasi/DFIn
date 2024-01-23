@@ -277,43 +277,32 @@
                     <div class="col-lg-6 mx-auto  pb-55">
                         <div class="section-title">
                             <!-- <span class="short-title-2">OUR PROCESS</span> -->
-                            <h1 class="wow fadeInUp">3 <span class="underline-shape">steps</span> to follow</h1>
+                            <h1 class="wow fadeInUp">2 <span class="underline-shape">steps</span> to follow</h1>
                             <p class="wow fadeInUp" data-wow-delay="0.3s">Explore our streamlined process to secure the financial assistance you need.</p>
                         </div>
                     </div>
                 </div>
                 <div class="row gy-xl-0 gy-4">
-                    <div class="col-xl-4 col-md-6">
+                    <div class="col-xl-5 col-md-6 mx-auto">
                         <div class="feature-card-widget-8 wow fadeInUp" data-wow-delay="0.1s">
                             <div class="card-img">
                                 <img src="img/home-4/step-icon-01.svg" alt="feature svg">
                             </div>
                             <h4>Apply for loan</h4>
-                            <p>Get started with ease loan effortlessly and experience a streamlined process.
-                            </p>
+                            <p>Get started with ease loan effortlessly and experience a streamlined process.</p>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-md-6">
+                    <div class="col-xl-5 col-md-6 mx-auto">
                         <div class="feature-card-widget-8 wow fadeInUp" data-wow-delay="0.3s">
                             <div class="card-img">
                                 <img src="img/home-4/step-icon-02.svg" alt="feature svg">
                             </div>
                             <h4>Get approved <br> (As Per Product Norms)</h4>
-                            <p>Experience a swift approval process tailored to product norms.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-xl-4 col-md-6 mx-auto">
-                        <div class="feature-card-widget-8 wow fadeInUp" data-wow-delay="0.5s">
-                            <div class="card-img">
-                                <img src="img/home-4/step-icon-03.svg" alt="feature svg">
-                            </div>
-                            <h4>Get your money</h4>
-                            <p>Receive your funds quickly and securely.
-                            </p>
+                            <p>Experience a swift approval process tailored to product norms.</p>
                         </div>
                     </div>
                 </div>
+
             </div>
         </section>
         <!-- feature section end-->
@@ -328,8 +317,8 @@
                     <span class="short-title-2">DFin Services</span>
                     <h1>Why Choose <span style="color:#e75480;">DFin</span></h1>
                     <p>What sets DFin apart is our commitment to personalized service,<br> competitive rates, and transparent processes.
-                        Unlike other financial services, we prioritize<br>your unique needs and tailoring solutions that best fit your financial goals. 
-                        </p>
+                        Unlike other financial services, we prioritize<br>your unique needs and tailoring solutions that best fit your financial goals.
+                    </p>
                 </div>
 
                 <div class="table-responsive">
@@ -344,19 +333,19 @@
                         <tbody>
                             <tr>
                                 <th class="feature-head" scope="col">Payment Per Transaction</th>
-                                <td class="feature-item">0.25/per transaction</td>
-                                <td class="feature-item">0.75/per transaction</td>
+                                <td class="feature-item">0.25%(processing fee)</td>
+                                <td class="feature-item">0.75 to 1%</td>
                             </tr>
                             <!-- <tr>
                                 <th class="feature-head" scope="row">Bank account limitations</th>
                                 <td class="feature-item">up to 10 bank accounts</td>
                                 <td class="feature-item">Only 3 bank accounts</td>
                             </tr> -->
-                            <tr>
+                            <!-- <tr>
                                 <th class="feature-head" scope="row">Local fees capped at NGN 2,000</th>
                                 <td class="feature-item"> <i class="fas fa-check-circle"></i> </td>
                                 <td class="feature-item"> <i class="fas fa-times-circle"></i></td>
-                            </tr>
+                            </tr> -->
                             <tr>
                                 <th class="feature-head" scope="row">Loan Purchase</th>
                                 <td class="feature-item">easy to follow steps</td>
@@ -400,7 +389,7 @@
         <section class="calculator-area-three">
             <div class="container">
                 <div class="section-title bank-section-title mb-80">
-                    <span class="short-title-2">Loan Calculator</span>
+                    <span class="short-title-2"> EMI Loan Calculator</span>
                     <h1 class="wow fadeInUp"><span class="underline-shape">Calculate</span> your loan<br>
                         & get loan details
                     </h1>
@@ -417,7 +406,7 @@
                                         <button class="nav-link active" id="yearTab-tab" data-bs-toggle="tab" data-bs-target="#yearTab" type="button" role="tab" aria-controls="yearTab" aria-selected="false">Yearly
                                         </button>
                                         <button class="nav-link " id="monthTab-tab" data-bs-toggle="tab" data-bs-target="#monthTab" type="button" role="tab" aria-controls="monthTab" aria-selected="false">Monthly</button>
-                                        <button class="nav-link" id="weekTab-tab" data-bs-toggle="tab" data-bs-target="#weekTab" type="button" role="tab" aria-controls="weekTab" aria-selected="false">Weekly</button>
+                                        <!-- <button class="nav-link" id="weekTab-tab" data-bs-toggle="tab" data-bs-target="#weekTab" type="button" role="tab" aria-controls="weekTab" aria-selected="false">Weekly</button> -->
                                     </div>
                                 </nav>
 
@@ -920,8 +909,8 @@ https://api.whatsapp.com/send/?phone=7666456868&text=hijijij&type=phone_number&a
                                         <h2 class="mb-10">Check Your Avalibility</h2>
                                         <!-- <p>There are many variations of passages of Lorem Ipsum available.</p> -->
                                         <div class="d-flex flex-column flex-sm-row mt-40">
-                                            <input type="email" class="form-control" placeholder="Enter Email address">
-                                            <a href="#" class="input-append theme-btn theme-btn-lg ms-sm-3">Visit Us</a>
+                                            <!-- <input type="email" class="form-control" placeholder="Enter Email address"> -->
+                                            <a href="contact.php" class="input-append theme-btn theme-btn-lg ms-sm-3">Visit Us</a>
                                         </div>
                                         <ul class="list-unstyled feature-list">
                                             <!-- <li><i class="fas fa-check-circle"></i> Get 30 day free trial</li>
