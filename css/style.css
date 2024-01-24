@@ -2772,7 +2772,7 @@ header .header-top .header-info-right ul li i {
   top: 0;
   left: 0;
   height: 100%;
-  width: 100%;
+  /* width: 100%; */
   background-color: rgba(51, 62, 72, 0.8);
 }
 

@@ -29,105 +29,6 @@
 <body>
 
     <?php include "includes/header.php" ?>
-
-    <style>
-        .sidebar-fixed {
-            position: fixed;
-            z-index: 9999;
-            right: -87px;
-            top: calc(50% - 120px);
-            transition: all linear 0.3s;
-        }
-
-        .sidebar-fixed:hover {
-            position: fixed;
-            z-index: 9999;
-            right: 0px;
-            top: calc(50% - 120px);
-        }
-
-
-        .side-social-icons {
-            font-size: 16px;
-            color: white;
-            /* padding: ; */
-        }
-
-        .side-social-icons a {
-            /* font-size: 16px; */
-            color: white;
-            /* padding: ; */
-        }
-
-
-        .side-social-icons i {
-            padding: 10px 10px;
-            font-size: 20px;
-
-        }
-
-        .side-social-icons .facebook,
-        .side-social-icons .twitter,
-        .side-social-icons .linkedin,
-        .side-social-icons .whatsapp,
-        .side-social-icons .youtube,
-        .side-social-icons .instagram {
-            padding: 0px 10px 0px 0px;
-        }
-
-        .side-social-icons .facebook {
-            background-color: #3b5998;
-        }
-
-        .side-social-icons .twitter {
-            background-color: rgb(0, 0, 0);
-        }
-
-        .side-social-icons .linkedin {
-            background-color: #0077b5;
-        }
-
-        .side-social-icons .whatsapp {
-            background-color: #25d366;
-        }
-
-        .side-social-icons .youtube {
-            background-color: #CD201F;
-        }
-
-        .side-social-icons .instagram {
-            background-color: #fb17c3;
-        }
-    </style>
-
-
-    <div id="social-sidebar" class="sidebar-fixed">
-        <aside class="sidebar-content">
-            <div class="side-social-icons">
-                <div href="#" class="facebook">
-                    <a href=""><i class="fab fa-facebook-square"></i>Facebook</a>
-                </div>
-                <!-- <div href="#" class="twitter">
-                    <a href=""><i class="fa-brands fa-x-twitter"></i>Twitter</a>
-                </div> -->
-                <div href="#" class="linkedin">
-                    <a href=""><i class="fab fa-linkedin"></i>LinkedIn</a>
-                </div>
-                <div href="#" class="whatsapp">
-                    <a href="https://api.whatsapp.com/send/?phone=7666456868&text=hijijij&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i>WhatsApp</a>
-                </div>
-                <div href="#" class="instagram">
-                    <a href=""><i class="fab fa-instagram"></i>Instagram</a>
-                </div>
-                <div href="#" class="youtube">
-                    <a href=""><i class="fab fa-youtube"></i>YouTube</a>
-                </div>
-            </div>
-        </aside>
-    </div>
-
-
-
     <!-- social media slibaar end -->
 
     <style>
@@ -168,7 +69,7 @@
                                         <p>Discover innovative solutions for your financial needs.</p>
 
                                         <div class="d-flex flex-wrap mt-40">
-                                            <a href="#" class="theme-btn me-4">Get started now</a>
+                                            <a href="contact.php" class="theme-btn me-4">Get started now</a>
                                         </div>
                                     </div>
                                 </div>
@@ -186,11 +87,11 @@
                                         <h1>Empower Your Business with
                                             <span>Financial Excellence</span>
                                         </h1>
-                                        <p>Discover new possibilities and navigate financial success with our innovative solutions.</p>
+                                        <!-- <p>Discover new possibilities and navigate financial success with our innovative solutions.</p> -->
 
-                                        <div class="d-flex flex-wrap mt-40">
+                                        <!-- <div class="d-flex flex-wrap mt-40">
                                             <a href="#" class="theme-btn me-4">Get started now</a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -207,11 +108,11 @@
                                         <h1>Transform Your Finances with
                                             <span class="underline-shape"></span>Innovative Solutions
                                         </h1>
-                                        <p>Explore our tailored financial services designed to elevate your business.</p>
+                                        <!-- <p>Explore our tailored financial services designed to elevate your business.</p> -->
 
-                                        <div class="d-flex flex-wrap mt-40">
+                                        <!-- <div class="d-flex flex-wrap mt-40">
                                             <a href="#" class="theme-btn me-4">Get started now</a>
-                                        </div>
+                                        </div> -->
                                     </div>
                                 </div>
                                 <div class="col-lg-6">
@@ -368,7 +269,7 @@
                             </tr> -->
                             <tr>
                                 <th class="feature-head bg-transparent" scope="row"></th>
-                                <td class="feature-item p-0 bg-transparent"><a href="#" class="theme-btn"><span>Get
+                                <td class="feature-item p-0 bg-transparent"><a href="contact.php" class="theme-btn"><span>Get
                                             started
                                             now</span> <i class="arrow_right"></i></a></td>
                                 <td class="feature-item bg-transparent"> </td>
@@ -693,7 +594,7 @@ https://api.whatsapp.com/send/?phone=7666456868&text=hijijij&type=phone_number&a
         <section class="client-area-2 pt-60 pb-60">
             <div class="container">
                 <div class="section-title">
-                    <span class="short-title-2">Testimonials</span>
+                    <span class="short-title-2" id="test-1">Testimonials</span>
                     <h1 class="wow fadeInUp mb-3">Customer <span class="underline-shape">feedbacks</span></h1>
                     <p class="wow fadeInUp" data-wow-delay="0.1s">Explore what our valued customers have to say about their experiences.</p>
                 </div>
@@ -966,6 +867,28 @@ https://api.whatsapp.com/send/?phone=7666456868&text=hijijij&type=phone_number&a
             },
         });
     </script>
+
+<script>
+		document.addEventListener("DOMContentLoaded", function() {
+
+
+			document.querySelectorAll('a[href^="test-1"]').forEach(anchor => {
+				anchor.addEventListener("click", function(e) {
+					e.preventDefault();
+					//console.log("Link clicked");
+					const targetElement = document.getElementById("test-1");
+					if (targetElement) {
+						// console.log("Scrolling to", targetElement);
+						targetElement.scrollIntoView({
+							behavior: "smooth"
+						});
+					} else {
+						console.error("Target element not found");
+					}
+				});
+			});
+		});
+	</script>
 </body>
 
 

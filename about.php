@@ -6,20 +6,23 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1.0">
     <title>DFin - Loan Provider & Financer</title>
-
     <link rel="shortcut icon" href="img\how-works\favicon.ico" type="image/x-icon">
 
-    <!-- CSS here -->
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/slick.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
+    <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/eleganticons@0.0.1/lte-ie7.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/eleganticons@0.0.1/css/style.min.css">
 </head>
 
 <body>
@@ -40,11 +43,11 @@
                                 <h1 class="wow fadeInUp mb-0" data-wow-delay='0.2s'>Believing, banking and achieving
                                     different</h1>
                             </div>
-                            <a class="theme-btn-2 theme-btn-primary mt-45 wow fadeInUp" data-wow-delay="0.4s" href="#">
+                            <!-- <a class="theme-btn-2 theme-btn-primary mt-45 wow fadeInUp" data-wow-delay="0.4s" href="#">
                                 <span class="arrow">
                                     <span class="horizontal-line"></span>
                                 </span>View our 2019 Annual Report
-                            </a>
+                            </a> -->
                         </div>
                     </div>
                 </div>

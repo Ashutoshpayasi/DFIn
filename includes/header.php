@@ -25,50 +25,43 @@
             margin-right: 20px;
             /* Adjust as needed */
             animation: scrollTicker 5s linear infinite;
-        }
 
-        @keyframes scrollTicker {
-            from {
-                transform: translateX(100%);
-            }
 
-            to {
-                transform: translateX(-100%);
-            }
         }
     </style>
 
-    
-
-
-
-    <!-- Header -->
-    <header class="header">
     <section class="bg-danger topbar">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
                     <!-- <h1 class="d-none">Stock price ticker</h1> -->
-                    <ul class="price-ticker list-inline overflow-hidden mb-0">
-                        <li class="list-inline-item">SBI<span class="badge bg-up ms-1">542.75<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">HDFC<span class="badge bg-down ms-1">1654.00<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">CANBK<span class="badge bg-down ms-1">210.75<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">UNION<span class="badge bg-up ms-1">55.75<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">BOB<span class="badge bg-up ms-1">106.95<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">ICICI<span class="badge bg-up ms-1">842.25<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">AXIS<span class="badge bg-down ms-1">861.20<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">PNB<span class="badge bg-up ms-1">49.85<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">IDBI<span class="badge bg-up ms-1">79.10<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">RBL<span class="badge bg-up ms-1">269.00<i class="fas fa-circle"></i></span></li>
-                        <!-- <li class="list-inline-item">BANDHAN<span class="badge bg-up ms-1">229.60<i class="fas fa-circle"></i></span></li> -->
-                        <li class="list-inline-item">BOI<span class="badge bg-up ms-1">137.45<i class="fas fa-circle"></i></span></li>
-
+                    <ul class="price-ticker list-inline  mb-0">
+                        <li class="list-inline-item">SBI<span class="badge bg-up ms-1">8.60%<i class="fas fa-circle"></i></span></li>
+                        <li class="list-inline-item">HDFC<span class="badge bg-down ms-1">8.50%<i class="fas fa-circle"></i></span></li>
+                        <li class="list-inline-item">Kotak<span class="badge bg-down ms-1">8.65%<i class="fas fa-circle"></i></span></li>
+                        <li class="list-inline-item">IDFC<span class="badge bg-up ms-1">8.75%<i class="fas fa-circle"></i></span></li>
+                        <li class="list-inline-item">BOB<span class="badge bg-up ms-1">8.75%<i class="fas fa-circle"></i></span></li>
+                        <li class="list-inline-item">ICICI<span class="badge bg-up ms-1">8.65%<i class="fas fa-circle"></i></span></li>
+                        <li class="list-inline-item">AXIS<span class="badge bg-down ms-1">8.60%<i class="fas fa-circle"></i></span></li>
+                        <li class="list-inline-item">IIFL<span class="badge bg-up ms-1">9.25%<i class="fas fa-circle"></i></span></li>
+                        <li class="list-inline-item">IndusInd<span class="badge bg-up ms-1">8.65%<i class="fas fa-circle"></i></span></li>
+                        <li class="list-inline-item">Cent Bank<span class="badge bg-up ms-1">8.85%<i class="fas fa-circle"></i></span></li>
+                        <li class="list-inline-item">BOI<span class="badge bg-up ms-1">8.75%<i class="fas fa-circle"></i></span></li>
+                        <li class="list-inline-item">Bajaj<span class="badge bg-up ms-1">8.55%<i class="fas fa-circle"></i></span></li>
+                        <li class="list-inline-item">IndiaBulls<span class="badge bg-up ms-1">9.25%<i class="fas fa-circle"></i></span></li>
+                        <li class="list-inline-item">Aditya Birla<span class="badge bg-up ms-1">8.25%<i class="fas fa-circle"></i></span></li>
                     </ul>
                 </div>
-            </div> 
+            </div>
         </div>
     </section>
-        
+
+
+
+    <!-- Header -->
+    <header class="header">
+
+
         <div class="header-menu header-menu-4" id="sticky">
             <nav class="navbar navbar-expand-lg ">
                 <div class="container">
@@ -92,19 +85,19 @@
                     <div class="collapse navbar-collapse right-nav" id="navbarSupportedContent">
                         <ul class="navbar-nav menu ms-auto">
                             <li class="nav-item dropdown submenu ">
-                                <a href="#" class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                                <a href="index.php" class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
 
 
                             </li>
 
                             <li class="nav-item dropdown submenu ">
-                                <a href="#" class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
+                                <a href="about.php" class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
 
 
                             </li>
 
                             <li class="nav-item dropdown submenu">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="index.php#test-1" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     Testimonials
                                 </a>
                                 <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-bs-toggle="dropdown"></i>
@@ -132,12 +125,14 @@
                                     Services
                                 </a>
                                 <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-bs-toggle="dropdown"></i>
-                                <!-- <ul class="dropdown-menu ">
-                                    <li class="nav-item"><a class="nav-link" href="card.php">Cards</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="about.php">About Us</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="contact.php">Contact Us</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="error.php">404 Error</a></li>
-                                </ul> -->
+                                <ul class="dropdown-menu ">
+                                    <li class="nav-item"><a class="nav-link" href="home_loan.php">Home Loan</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="buisness_loan.php">Buisness Loan</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="car_loan.php">Car Loan</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="dod.php">DOD</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="cgtsme.php">CGTSME</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="property_loan.php">Loan Per Property</a></li>
+                                </ul>
                             </li>
                             <li class="nav-item dropdown submenu">
                                 <a class="nav-link dropdown-toggle" href="contact.php" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -162,4 +157,139 @@
             </nav>
         </div>
     </header>
+
+    <style>
+        .sidebar-fixed {
+            position: fixed;
+            z-index: 9999;
+            right: -87px;
+            top: calc(50% - 120px);
+            transition: all linear 0.3s;
+        }
+
+        .sidebar-fixed:hover {
+            position: fixed;
+            z-index: 9999;
+            right: 0px;
+            top: calc(50% - 120px);
+        }
+
+
+        .side-social-icons {
+            font-size: 16px;
+            color: white;
+            /* padding: ; */
+        }
+
+        .side-social-icons a {
+            /* font-size: 16px; */
+            color: white;
+            /* padding: ; */
+        }
+
+
+        .side-social-icons i {
+            padding: 10px 10px;
+            font-size: 20px;
+
+        }
+
+        .side-social-icons .facebook,
+        .side-social-icons .twitter,
+        .side-social-icons .linkedin,
+        .side-social-icons .whatsapp,
+        .side-social-icons .youtube,
+        .side-social-icons .instagram {
+            padding: 0px 10px 0px 0px;
+        }
+
+        .side-social-icons .facebook {
+            background-color: #3b5998;
+        }
+
+        .side-social-icons .twitter {
+            background-color: rgb(0, 0, 0);
+        }
+
+        .side-social-icons .linkedin {
+            background-color: #0077b5;
+        }
+
+        .side-social-icons .whatsapp {
+            background-color: #25d366;
+        }
+
+        .side-social-icons .youtube {
+            background-color: #CD201F;
+        }
+
+        .side-social-icons .instagram {
+            background-color: #fb17c3;
+        }
+    </style>
+    <div id="social-sidebar" class="sidebar-fixed">
+        <aside class="sidebar-content">
+            <div class="side-social-icons">
+                <div href="#" class="facebook">
+                    <a href=""><i class="fab fa-facebook-square"></i>Facebook</a>
+                </div>
+                <!-- <div href="#" class="twitter">
+                    <a href=""><i class="fa-brands fa-x-twitter"></i>Twitter</a>
+                </div> -->
+                <div href="#" class="linkedin">
+                    <a href=""><i class="fab fa-linkedin"></i>LinkedIn</a>
+                </div>
+                <div href="#" class="whatsapp">
+                    <a href="https://api.whatsapp.com/send/?phone=7666456868&text=hijijij&type=phone_number&app_absent=0"><i class="fab fa-whatsapp"></i>WhatsApp</a>
+                </div>
+                <div href="#" class="instagram">
+                    <a href=""><i class="fab fa-instagram"></i>Instagram</a>
+                </div>
+                <div href="#" class="youtube">
+                    <a href=""><i class="fab fa-youtube"></i>YouTube</a>
+                </div>
+            </div>
+        </aside>
+    </div>
+
+
+
+
+    <!-- Add this script to your HTML file -->
+    <!-- Add this script to your HTML file -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const priceTicker = document.querySelector('.price-ticker');
+            const tickerItems = document.querySelectorAll('.price-ticker li');
+
+            // Clone the list items to create an infinite loop
+            const clonedItems = [...tickerItems].map(item => item.cloneNode(true));
+
+            // Append cloned items to the ticker
+            clonedItems.forEach(item => priceTicker.appendChild(item));
+
+            // Set the width of the ticker to accommodate cloned items
+            const tickerWidth = tickerItems[0].offsetWidth;
+            priceTicker.style.width = `${tickerWidth * (tickerItems.length + clonedItems.length)}px`;
+
+            // Scroll animation
+            let scrollValue = 0;
+
+            function scrollTicker() {
+                scrollValue += 1;
+
+                // Reset scroll to the beginning when it reaches the total width
+                if (scrollValue >= tickerWidth * tickerItems.length) {
+                    scrollValue = 0;
+                }
+
+                priceTicker.style.transform = `translateX(-${scrollValue}px)`;
+                requestAnimationFrame(scrollTicker);
+            }
+            requestAnimationFrame(scrollTicker);
+        });
+    </script>
+
+
+
     <!-- Header end-->
