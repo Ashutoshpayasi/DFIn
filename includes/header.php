@@ -13,29 +13,44 @@
     </div>
 
     <!-- style for loop -->
+
+
     <style>
         .price-ticker {
             white-space: nowrap;
             overflow: hidden;
-
+            position: relative;
         }
 
         .price-ticker li {
             display: inline-block;
             margin-right: 20px;
-            /* Adjust as needed */
+            width: 95px;
+            box-sizing: border-box;
             animation: scrollTicker 5s linear infinite;
+        }
 
+        @keyframes scrollTicker {
+            from {
+                transform: translateX(100%);
+            }
 
+            to {
+                transform: translateX(-100%);
+            }
         }
     </style>
 
-    <section class="bg-danger topbar">
+
+
+    <section class="bg-danger">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12">
-                    <!-- <h1 class="d-none">Stock price ticker</h1> -->
-                    <ul class="price-ticker list-inline  mb-0">
+
+
+                    <ul class="price-ticker list-inline overflow-hidden mb-0">
+
                         <li class="list-inline-item">SBI<span class="badge bg-up ms-1">8.60%<i class="fas fa-circle"></i></span></li>
                         <li class="list-inline-item">HDFC<span class="badge bg-down ms-1">8.50%<i class="fas fa-circle"></i></span></li>
                         <li class="list-inline-item">Kotak<span class="badge bg-down ms-1">8.65%<i class="fas fa-circle"></i></span></li>
@@ -44,17 +59,21 @@
                         <li class="list-inline-item">ICICI<span class="badge bg-up ms-1">8.65%<i class="fas fa-circle"></i></span></li>
                         <li class="list-inline-item">AXIS<span class="badge bg-down ms-1">8.60%<i class="fas fa-circle"></i></span></li>
                         <li class="list-inline-item">IIFL<span class="badge bg-up ms-1">9.25%<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">IndusInd<span class="badge bg-up ms-1">8.65%<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">Cent Bank<span class="badge bg-up ms-1">8.85%<i class="fas fa-circle"></i></span></li>
+                        <li class="list-inline-item">Indus<span class="badge bg-up ms-1">8.65%<i class="fas fa-circle"></i></span></li>
+                        <li class="list-inline-item">Cent<span class="badge bg-up ms-1">8.85%<i class="fas fa-circle"></i></span></li>
                         <li class="list-inline-item">BOI<span class="badge bg-up ms-1">8.75%<i class="fas fa-circle"></i></span></li>
                         <li class="list-inline-item">Bajaj<span class="badge bg-up ms-1">8.55%<i class="fas fa-circle"></i></span></li>
                         <li class="list-inline-item">IndiaBulls<span class="badge bg-up ms-1">9.25%<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">Aditya Birla<span class="badge bg-up ms-1">8.25%<i class="fas fa-circle"></i></span></li>
+                        <!-- <li class="list-inline-item">AdityaBirla<span class="badge bg-up ms-1">8.25%<i class="fas fa-circle"></i></span></li> -->
                     </ul>
                 </div>
             </div>
+            </ul>
+        </div>
+        </div>
         </div>
     </section>
+
 
 
 
@@ -129,9 +148,9 @@
                                     <li class="nav-item"><a class="nav-link" href="home_loan.php">Home Loan</a></li>
                                     <li class="nav-item"><a class="nav-link" href="buisness_loan.php">Buisness Loan</a></li>
                                     <li class="nav-item"><a class="nav-link" href="car_loan.php">Car Loan</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="dod.php">DOD</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="cgtsme.php">CGTSME</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="property_loan.php">Loan Per Property</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="personal_loan.php">Personal Loan</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="cgtmse.php">CGTSME</a></li>
+                                    <li class="nav-item"><a class="nav-link" href="builders.php">Builders</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item dropdown submenu">
@@ -257,7 +276,7 @@
 
     <!-- Add this script to your HTML file -->
     <!-- Add this script to your HTML file -->
-    <script>
+    <!-- <script>
         document.addEventListener('DOMContentLoaded', function() {
             const priceTicker = document.querySelector('.price-ticker');
             const tickerItems = document.querySelectorAll('.price-ticker li');
@@ -288,7 +307,7 @@
             }
             requestAnimationFrame(scrollTicker);
         });
-    </script>
+    </script> -->
 
 
 

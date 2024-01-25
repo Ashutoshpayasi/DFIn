@@ -9,20 +9,23 @@
     <link rel="shortcut icon" href="img\how-works\favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
+    <!--  -->
     <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/slick.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/slick-theme.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/nice-select.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
+    <link rel="stylesheet" href="css/flatpickr.min.css">
+    <link rel="stylesheet" href="css/nouislider.min.css">
+    <link rel="stylesheet" href="css/jquery.fancybox.min.css">
     <link rel="stylesheet" type="text/css" href="css/default.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/style.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-    <script src="https://cdn.jsdelivr.net/npm/eleganticons@0.0.1/lte-ie7.min.js"></script>
+    <!--  -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/eleganticons@0.0.1/css/style.min.css">
 </head>
 
@@ -287,13 +290,13 @@
 
         <!-- loan calculator start -->
 
-        <section class="calculator-area-three">
+
+        <section class="calculator-area-2">
             <div class="container">
-                <div class="section-title bank-section-title mb-80">
-                    <span class="short-title-2"> EMI Loan Calculator</span>
-                    <h1 class="wow fadeInUp"><span class="underline-shape">Calculate</span> your loan<br>
-                        & get loan details
-                    </h1>
+
+                <div class="section-title">
+                    <!-- <span class="short-title-2">EMI Loan calculator</span> -->
+                    <h1 class="wow fadeInUp text-white">EMI Loan calculator</h1>
                 </div>
 
                 <div class="calculator-widget-2 mt-50">
@@ -307,7 +310,9 @@
                                         <button class="nav-link active" id="yearTab-tab" data-bs-toggle="tab" data-bs-target="#yearTab" type="button" role="tab" aria-controls="yearTab" aria-selected="false">Yearly
                                         </button>
                                         <button class="nav-link " id="monthTab-tab" data-bs-toggle="tab" data-bs-target="#monthTab" type="button" role="tab" aria-controls="monthTab" aria-selected="false">Monthly</button>
-                                        <!-- <button class="nav-link" id="weekTab-tab" data-bs-toggle="tab" data-bs-target="#weekTab" type="button" role="tab" aria-controls="weekTab" aria-selected="false">Weekly</button> -->
+                                        <!-- <button class="nav-link" id="weekTab-tab" data-bs-toggle="tab"
+                                            data-bs-target="#weekTab" type="button" role="tab" aria-controls="weekTab"
+                                            aria-selected="false">Weekly</button> -->
                                     </div>
                                 </nav>
 
@@ -317,6 +322,7 @@
                                     <div class="input-group">
                                         <input class="noTextMerge" type="text" id="SetRange">
                                         <span class="input-group-text">₹</span>
+
                                     </div>
                                 </div>
                                 <div class="range-label">Interest Rate</div>
@@ -327,7 +333,7 @@
                                         <span class="input-group-text">%</span>
                                     </div>
                                 </div>
-                                <!-- <div class="range-label">Loan Duration</div> -->
+                                <div class="range-label">Loan Duration</div>
                                 <div class="single-range">
                                     <div class="tab-content">
                                         <div class="tab-pane fade show active" id="yearTab" role="tabpanel" aria-labelledby="yearTab">
@@ -340,10 +346,10 @@
                                             <div id="WeekRangeSlider"></div>
                                         </div>
                                     </div>
-                                    <!-- <div class="input-group">
+                                    <div class="input-group">
                                         <input class="noTextMerge" type="text" id="SetMonthRange">
                                         <span class="input-group-text loanTermIndicator">@example.com</span>
-                                    </div> -->
+                                    </div>
                                 </div>
                                 <!-- <div class="d-flex loan-start-date">
                                     <div>
@@ -395,7 +401,7 @@
                                         <span class="amount" id="emiAmount"></span>
                                     </li>
                                 </ul>
-                                <a href="personal-details.php" class="theme-btn theme-btn-lg mt-20 w-100">Apply Now
+                                <a href="contact.php" class="theme-btn theme-btn-lg mt-20 w-100">Apply Now
                                     <i class="arrow_right"></i></a>
                             </div>
                         </div>
@@ -411,7 +417,7 @@
 
         <!-- how it works start -->
 
-        <section class="how-it-work">
+        <section class="how-it-work pt-30 pb-30">
             <div class="container">
                 <div class="row">
                     <div class="col-md-8 mx-auto">
@@ -505,16 +511,19 @@ https://api.whatsapp.com/send/?phone=7666456868&text=hijijij&type=phone_number&a
                                     <div class="w-100">
                                         <div class="faq-header" id="headingOne">
                                             <h4 class="mb-0" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                                Can I pay off my loan early?<i class="icon_plus"></i><i class=" icon_minus-06"></i>
+                                                What documents are required to get a Business Loan , Home Loan, Mortgage Loan , Car Loan , Builder Inventory Funding, Builder Project Finance and Loan Against Share’s ?
+                                                <i class="icon_plus"></i><i class=" icon_minus-06"></i>
                                             </h4>
                                         </div>
                                         <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
                                             <div class="faq-body">
-                                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                    terry
-                                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                                    skateboard
-                                                    dolor brunch.</p>
+                                                <ul>
+                                                    <li>1. PAN Card </li>
+                                                    <li>2. Aadhaar Card </li>
+                                                    <li>3. 12 months bank statement in PDF format </li>
+                                                    <li>4. Business proof</li>
+                                                    <li>5. 2 Years ITR full set</li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -524,16 +533,16 @@ https://api.whatsapp.com/send/?phone=7666456868&text=hijijij&type=phone_number&a
                                     <div class="w-100">
                                         <div class="faq-header" id="headingTwo">
                                             <h4 class="mb-0 collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
-                                                How much can I DFin?<i class="icon_plus"></i><i class=" icon_minus-06"></i>
+                                                I don’t have a credit(CIBIL) score. Will I
+                                                get a loan?
+                                                <i class="icon_plus"></i><i class=" icon_minus-06"></i>
                                             </h4>
                                         </div>
                                         <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
                                             <div class="faq-body">
-                                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                    terry
-                                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                                    skateboard
-                                                    dolor brunch.</p>
+                                                <p>Yes, Dfincs will use your banking data to
+                                                    generate an offer for you.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
@@ -543,16 +552,18 @@ https://api.whatsapp.com/send/?phone=7666456868&text=hijijij&type=phone_number&a
                                     <div class="w-100">
                                         <div class="faq-header" id="headingThree">
                                             <h4 class="mb-0 collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
-                                                Do you offering refinancing ?<i class="icon_plus"></i><i class=" icon_minus-06"></i>
+                                                How long will it take to get a loans?<i class="icon_plus"></i><i class=" icon_minus-06"></i>
                                             </h4>
                                         </div>
                                         <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
                                             <div class="faq-body">
-                                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                    terry
-                                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                                    skateboard
-                                                    dolor brunch.</p>
+
+                                                <ul>
+                                                    <li>A. Business Loan - 5 to 8 working days </li>
+                                                    <li>B. Home Loan - 12 to 15 Working days </li>
+                                                    <li>C. Mortgage Loan - 15 to 20 working days</li>
+                                                    <li>D. Builder Inventory Funding - 20 to 25 working days. </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
@@ -562,22 +573,19 @@ https://api.whatsapp.com/send/?phone=7666456868&text=hijijij&type=phone_number&a
                                     <div class="w-100">
                                         <div class="faq-header" id="headingFour">
                                             <h4 class="mb-0 collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-                                                Can I do financing requirement with you?<i class="icon_plus"></i><i class=" icon_minus-06"></i>
+                                                How can I contact Dfincs customer
+                                                care?<i class="icon_plus"></i><i class=" icon_minus-06"></i>
                                             </h4>
                                         </div>
                                         <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
                                             <div class="faq-body">
-                                                <p>Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus
-                                                    terry
-                                                    richardson ad squid. 3 wolf moon officia aute, non cupidatat
-                                                    skateboard
-                                                    dolor brunch.</p>
+                                                <p>You can send an email to Dfincs.m@gmail.com or Contact:- +91 7208034445 / 7666456868</p>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                            <h6 class="more-contact">Have more question ? <a href="#">Contact Us</a></h6>
+                            <h6 class="more-contact">Have more question ? <a href="contact.php">Contact Us</a></h6>
                         </div>
                     </div>
                 </div>
@@ -848,6 +856,11 @@ https://api.whatsapp.com/send/?phone=7666456868&text=hijijij&type=phone_number&a
     <script type="text/javascript" src="js/jquery.waypoints.min.js"></script>
     <script type="text/javascript" src="js/jquery.counterup.min.js"></script>
     <script type="text/javascript" src="js/jquery.nice-select.min.js"></script>
+    <script type="text/javascript" src="js/nouislider.min.js"></script>
+    <script type="text/javascript" src="js/wNumb.js"></script>
+    <script type="text/javascript" src="js/flatpickr.min.js"></script>
+    <script type="text/javascript" src="js/jquery.fancybox.min.js"></script>
+
     <script type="text/javascript" src="js/slick.min.js"></script>
     <script type="text/javascript" src="js/parallax.js"></script>
     <script type="text/javascript" src="js/jquery.parallax-scroll.js"></script>
@@ -855,6 +868,7 @@ https://api.whatsapp.com/send/?phone=7666456868&text=hijijij&type=phone_number&a
     <script src="https://unpkg.com/ionicons@5.4.0/dist/ionicons.js"></script>
     <script type="text/javascript" src="js/custom.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script></script>
 
     <script>
         const swiper = new Swiper('.swiper', {
@@ -868,27 +882,27 @@ https://api.whatsapp.com/send/?phone=7666456868&text=hijijij&type=phone_number&a
         });
     </script>
 
-<script>
-		document.addEventListener("DOMContentLoaded", function() {
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
 
 
-			document.querySelectorAll('a[href^="test-1"]').forEach(anchor => {
-				anchor.addEventListener("click", function(e) {
-					e.preventDefault();
-					//console.log("Link clicked");
-					const targetElement = document.getElementById("test-1");
-					if (targetElement) {
-						// console.log("Scrolling to", targetElement);
-						targetElement.scrollIntoView({
-							behavior: "smooth"
-						});
-					} else {
-						console.error("Target element not found");
-					}
-				});
-			});
-		});
-	</script>
+            document.querySelectorAll('a[href^="test-1"]').forEach(anchor => {
+                anchor.addEventListener("click", function(e) {
+                    e.preventDefault();
+                    //console.log("Link clicked");
+                    const targetElement = document.getElementById("test-1");
+                    if (targetElement) {
+                        // console.log("Scrolling to", targetElement);
+                        targetElement.scrollIntoView({
+                            behavior: "smooth"
+                        });
+                    } else {
+                        console.error("Target element not found");
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 
 

@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="img\how-works\favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
+    
     <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/slick.css" media="all" />
@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/eleganticons@0.0.1/lte-ie7.min.js"></script>
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/eleganticons@0.0.1/css/style.min.css">
 </head>
 
@@ -53,14 +53,63 @@
             </div>
         </section>
         <!-- Banner end -->
+        <style>
+            .card {
+                background: rgb(0, 0, 0);
+                background: -moz-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(10, 154, 111, 1) 0%, rgba(9, 143, 103, 1) 0%, rgba(13, 196, 142, 1) 0%, rgba(212, 29, 29, 0.28335084033613445) 0%, rgba(133, 94, 174, 1) 40%, rgba(163, 69, 182, 1) 67%, rgba(197, 40, 191, 1) 79%, rgba(223, 18, 198, 0) 86%, rgba(215, 25, 196, 1) 90%);
+                background: -webkit-linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(10, 154, 111, 1) 0%, rgba(9, 143, 103, 1) 0%, rgba(13, 196, 142, 1) 0%, rgba(212, 29, 29, 0.28335084033613445) 0%, rgba(133, 94, 174, 1) 40%, rgba(163, 69, 182, 1) 67%, rgba(197, 40, 191, 1) 79%, rgba(223, 18, 198, 0) 86%, rgba(215, 25, 196, 1) 90%);
+                background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(10, 154, 111, 1) 0%, rgba(9, 143, 103, 1) 0%, rgba(13, 196, 142, 1) 0%, rgba(212, 29, 29, 0.28335084033613445) 0%, rgba(133, 94, 174, 1) 40%, rgba(163, 69, 182, 1) 67%, rgba(197, 40, 191, 1) 79%, rgba(223, 18, 198, 0) 86%, rgba(215, 25, 196, 1) 90%);
+                filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000", endColorstr="#d719c4", GradientType=1);
+                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+                border-radius: 8px;
+                padding: 20px;
+                max-width: 100%;
+                text-align: center;
+                transition: transform 0.3s ease-in-out;
+            }
+
+            .card:hover {
+                transform: scale(1.05);
+            }
+
+            h2 {
+                color: #333;
+            }
+
+            p {
+                margin: 10px 0;
+                color: #666;
+            }
+
+            .apply-now-btn {
+                display: inline-block;
+                padding: 10px 15px;
+                /* Decreased width */
+                background: linear-gradient(90deg, #2196F3 0%, #0D47A1 100%);
+                /* Changed to blue gradient */
+                color: #fff;
+                text-decoration: none;
+                border-radius: 5px;
+                transition: 0.3s ease-in-out;
+                width: 200px;
+                margin-left: 60px;
+            }
+
+            
+            
+        </style>
 
         <section class="bg_white pt-90 pb-160 ">
             <div class="container">
                 <div class="description-widget">
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="desc-title text-end bg_primary">
-                                <h2>A journey that started with a belief to DFin </h2>
+                    <div class="col-md-4">
+                            <div class="card">
+                                <h2 class="text-white">Buisness Loan</h2>
+                                <p class="text-white">Min. Rs. 5 lakhs</p>
+                                <p class="text-white">Max Rs. 5 Crs (Without Collateral)
+</p>
+                                <a href="contact.php" class="apply-now-btn">Apply Now</a>
                             </div>
                         </div>
                         <div class="col-md-8">

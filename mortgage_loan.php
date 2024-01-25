@@ -1,3 +1,4 @@
+
 <!DOCTYPE HTML>
 <html lang="en-US">
 
@@ -33,14 +34,14 @@
 
     <main>
         <!-- Banner start -->
-        <section class="banner-area-2 pt-145" style="background-image: url(img/banner/woman-showing-with-one-hand-mini-house-real-state-concept-ai-generative_123827-24098.avif);">
+        <section class="banner-area-2 pt-145" style="background-image: url(img/home_loan/photo-1580920659896-7e8663eb956a.avif);">
             <div class="container">
                 <div class="row align-items-center pt-130 pb-140">
                     <div class="col-xl-6 col-lg-8">
                         <div class="banner-content py-5">
                             <div class="section-title text-start">
-                                <span class="short-title wow fadeInUp text-white">HOME LOAN</span>
-                                <h1 class="text-white" data-wow-delay='0.2s'>Get your dream home with low rates and flexible terms</h1>
+                                <span class="short-title wow fadeInUp text-white">Mortgage  LOAN</span>
+                                <h1 class="text-white" data-wow-delay='0.2s'>Get your dream Mortgage  with low rates and flexible terms</h1>
                             </div>
                             <!-- <a class="theme-btn-2 theme-btn-primary mt-45 wow fadeInUp" data-wow-delay="0.4s" href="#">
                                 <span class="arrow">
@@ -103,18 +104,19 @@
             <div class="container">
                 <div class="description-widget">
                     <div class="row">
-                        <div class="col-md-4">
+                    <div class="col-md-4">
                             <div class="card">
-                                <h2 class="text-white">Home Loan</h2>
-                                <p class="text-white">Min. Rs. 20 lakhs</p>
-                                <p class="text-white">Max Rs. 45 Crs.</p>
+                                <h2 class="text-white">Mortgage  Loan</h2>
+                                <p class="text-white">Min. Rs. 25 lakhs</p>
+                                <p class="text-white">Max Rs. 75 Crs
+</p>
                                 <a href="contact.php" class="apply-now-btn">Apply Now</a>
                             </div>
                         </div>
                         <div class="col-md-8">
                             <div class="desc-text pl-lg-10">
-                                <p>Our journey in providing home loan services started with a commitment to help you achieve your dream of homeownership. Since our inception, we have been dedicated to connecting individuals and families with the possibilities of owning a home.</p>
-                                <p class="mt-20">At DFin, we understand the importance of a home and the financial journey that comes with it. Our core banking services are tailored to offer flexible and affordable home loan options. Whether you are a first-time homebuyer or looking to refinance, we are here to guide you through the process.</p>
+                                <p>Our journey in providing Mortgage  loan services started with a commitment to help you achieve your dream of Mortgage . Since our inception, we have been dedicated to connecting individuals and families with the possibilities of owning a home.</p>
+                                <p class="mt-20">At DFin, we understand the importance of a Mortgage  and the financial journey that comes with it. Our core banking services are tailored to offer flexible and affordable Mortgage loan options. Whether you are a first-time homebuyer or looking to refinance, we are here to guide you through the process.</p>
                             </div>
                         </div>
                     </div>
@@ -123,15 +125,15 @@
             </div>
         </section>
 
-        <!-- features of home loan -->
+        <!-- features of Mortgage loan -->
 
         <section class="bcard-feature-area bg_disable pt-lg-125 pt-105 pb-lg-140 pb-115">
             <div class="container">
                 <div class="row">
                     <div class="col-lg-6 mx-auto">
                         <div class="section-title">
-                            <h2 class="wow fadeInUp">Key Features of DFin Home Loans</h2>
-                            <p class="wow fadeInUp" data-wow-delay="0.3s">Explore the features that make our home loan services convenient and secure for you.</p>
+                            <h2 class="wow fadeInUp">Key Features of DFin Mortgage  Loans</h2>
+                            <p class="wow fadeInUp" data-wow-delay="0.3s">Explore the features that make our Mortgage  loan services convenient and secure for you.</p>
                         </div>
                     </div>
                 </div>
@@ -147,7 +149,7 @@
                         <div class="feature-card-widget-5 wow fadeInUp" data-wow-delay="0.3s">
                             <img src="img/home_loan/icon-12.svg" alt="icon">
                             <h4 class="mt-30 mb-15">Competitive Interest Rates</h4>
-                            <p>Benefit from competitive and affordable interest rates tailored for your home financing.</p>
+                            <p>Benefit from competitive and affordable interest rates tailored for your Mortgage  financing.</p>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6">
@@ -161,21 +163,21 @@
                         <div class="feature-card-widget-5 wow fadeInUp" data-wow-delay="0.7s">
                             <img src="img/home_loan/icon-14.svg" alt="icon">
                             <h4 class="mt-30 mb-15">User-Friendly Mobile App</h4>
-                            <p>Access your home loan details and make transactions conveniently with our mobile application.</p>
+                            <p>Access your Mortgage  loan details and make transactions conveniently with our mobile application.</p>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6">
                         <div class="feature-card-widget-5 wow fadeInUp" data-wow-delay="0.9s">
                             <img src="img/home_loan/icon-15.svg" alt="icon">
                             <h4 class="mt-30 mb-15">Online Application</h4>
-                            <p>Apply for a home loan online with our easy and streamlined application process.</p>
+                            <p>Apply for a Mortgage  loan online with our easy and streamlined application process.</p>
                         </div>
                     </div>
                     <div class="col-xl-4 col-md-6">
                         <div class="feature-card-widget-5 wow fadeInUp" data-wow-delay="1.1s">
                             <img src="img/home_loan/icon-16.svg" alt="icon">
                             <h4 class="mt-30 mb-15">Transparent Fees</h4>
-                            <p>Experience transparency with clear communication and minimal fees for our home loan services.</p>
+                            <p>Experience transparency with clear communication and minimal fees for our Mortgage  loan services.</p>
                         </div>
                     </div>
                 </div>
@@ -183,7 +185,7 @@
         </section>
 
 
-        <!-- features of home loan end -->
+        <!-- features of Mortgage loan end -->
 
         <!-- why choose us -->
         <section class="why-choose-area pt-125 pb-135 overflow-hidden">
@@ -191,8 +193,8 @@
                 <div class="row">
                     <div class="col-lg-6 mx-auto">
                         <div class="section-title">
-                            <h2 class="wow fadeInUp">Why Choose DFin Home Loans?</h2>
-                            <p class="wow fadeInUp text-white" data-wow-delay="0.3s">Discover the reasons to choose DFin for your home loan needs.</p>
+                            <h2 class="wow fadeInUp">Why Choose DFin Mortgage  Loans?</h2>
+                            <p class="wow fadeInUp text-white" data-wow-delay="0.3s">Discover the reasons to choose DFin for your Mortgage  loan needs.</p>
                         </div>
                     </div>
                 </div>
@@ -202,7 +204,7 @@
 
                             <img src="img\how-works\layout.svg" alt="icon">
                             <h4 class="mt-30 mb-15">Easy Application Process</h4>
-                            <p>Our home loan application process is designed to be user-friendly, making it easy for you to apply and navigate through the entire process.</p>
+                            <p>Our Mortgage  loan application process is designed to be user-friendly, making it easy for you to apply and navigate through the entire process.</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
@@ -212,15 +214,15 @@
                             </div>
                             <img src="img\how-works\salary (1).svg" alt="icon">
                             <h4 class="mt-30 mb-15">Quick Approval & Disbursement</h4>
-                            <p>Experience faster approval and disbursement processes, ensuring that you get the funds you need for your dream home without delays.</p>
+                            <p>Experience faster approval and disbursement processes, ensuring that you get the funds you need for your dream Mortgage  without delays.</p>
                         </div>
                     </div>
                     <div class="col-lg-4">
                         <div class="content-box pr-lg-30 pl-lg-30 wow fadeInUp" data-wow-delay="0.5s">
                             <img src="img\how-works\antivirus.svg" alt="icon">
                             <h4 class="mt-30 mb-15">Secure Transactions</h4>
-                            <p>Your financial security is our priority. Benefit from 100% secure transactions and data
-                                protection throughout your home loan journey with DFin.</p>
+                            <p>Your financial security is our priority. Benefit from 100% secure transactions and data 
+                                protection throughout your Mortgage  loan journey with DFin.</p>
                         </div>
                     </div>
                 </div>
@@ -337,22 +339,22 @@
 
         <!-- Call To Action start -->
         <section class="cta-area-2 pt-80 pb-80">
-            <div class="container">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <div class="cta-content text-black wow fadeInRight">
-                            <h2>Unlock Your Dream Home with DFin</h2>
-                            <p>Explore our home loan options and take the first step towards homeownership with DFin. Access flexible terms, competitive rates, and a seamless application process.</p>
-                        </div>
-                    </div>
-                    <div class="col-md-6 ">
-                        <div class="cta-content mt-3 mt-sm-0 text-sm-end text-center">
-                            <a href="contact.php" class="theme-btn wow fadeInLeft">Get Home Loan</a>
-                        </div>
-                    </div>
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <div class="cta-content text-black wow fadeInRight">
+                    <h2>Unlock Your Dream Mortgage  with DFin</h2>
+                    <p>Explore our Mortgage  loan options and take the first step towards Mortgage  with DFin. Access flexible terms, competitive rates, and a seamless application process.</p>
                 </div>
             </div>
-        </section>
+            <div class="col-md-6 ">
+                <div class="cta-content mt-3 mt-sm-0 text-sm-end text-center">
+                    <a href="contact.php" class="theme-btn wow fadeInLeft">Get Mortgage  Loan</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
         <!-- Call To Action end -->
     </main>

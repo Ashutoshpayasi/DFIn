@@ -9,7 +9,7 @@
     <link rel="shortcut icon" href="img\how-works\favicon.ico" type="image/x-icon">
 
     <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css" media="all" />
-    <link rel="stylesheet" type="text/css" href="css/elegant-icons.min.css" media="all" />
+    
     <link rel="stylesheet" type="text/css" href="css/all.min.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/animate.css" media="all" />
     <link rel="stylesheet" type="text/css" href="css/slick.css" media="all" />
@@ -21,7 +21,7 @@
     <link rel="stylesheet" type="text/css" href="css/responsive.css" media="all" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
-    <script src="https://cdn.jsdelivr.net/npm/eleganticons@0.0.1/lte-ie7.min.js"></script>
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/eleganticons@0.0.1/css/style.min.css">
 </head>
 
@@ -39,8 +39,8 @@
                     <div class="col-xl-6 col-lg-8">
                         <div class="banner-content py-5">
                             <div class="section-title text-start">
-                                <span class="short-title wow fadeInUp">ABOUT US</span>
-                                <h1 class="wow fadeInUp mb-0" data-wow-delay='0.2s'>Believing, banking and achieving
+                                <h1 style="color: #e75480;">ABOUT US</h1>
+                                <h1 class="wow fadeInUp mb-0" data-wow-delay='0.2s'>Believing, DFIN and achieving
                                     different</h1>
                             </div>
                             <!-- <a class="theme-btn-2 theme-btn-primary mt-45 wow fadeInUp" data-wow-delay="0.4s" href="#">
@@ -55,29 +55,45 @@
         </section>
         <!-- Banner end -->
 
-        <section class="bg_white pt-90 pb-160 ">
+        <section class="bg_white pt-90 pb-60 ">
             <div class="container">
                 <div class="description-widget">
                     <div class="row">
-                        <div class="col-md-4">
-                            <div class="desc-title text-end bg_primary">
-                                <h2>A journey that started with a belief to Bank Different</h2>
+                        <!-- <div class="col-md-6">
+                            <div class="">
+                                
                             </div>
-                        </div>
+                        </div> -->
                         <div class="col-md-8">
+                            <h1>A journey started with DFIN</h1>
                             <div class="desc-text pl-lg-10">
-                                <p>DFin's journey started with a single belief to connect people,
-                                    places and
-                                    possibilities by doing things others said could not be done. Anchored on this
-                                    belief,
-                                    the Bank was founded in 2017 and we are, to date, headquartered in the Mauritius
-                                    International Financial Centre with a representative office in United States.</p>
-                                <p class="mt-20">DFin's core banking and transactional capabilities are also
-                                    complemented. DFin's
-                                    experienced team and its regional foundation are complemented by the belief and
-                                    trust
-                                    our clients have in our ability to connect them to a global banking network to
-                                    seamlessly achieve their financial aspirations.</p>
+                                <p>DFINS is a leading platform that
+                                    brings together an extensive network
+                                    of Banks and NBFCs, offering a
+                                    comprehensive range of loan services.
+                                    Founded by Mr. Dhirendra Yadav and Mr. Chandrashekhar Yadav
+                                    Dfincs has established itself as a
+                                    trusted name in the industry, serving
+                                    over 7500 satisfied customers.
+
+                                </p>
+                                <h1 class="mt-20">VISION </h1>
+                                <p class="mt-20">Our vision at Dfincs is to
+                                    empower individuals from all walks
+                                    of life to achieve their dreams and
+                                    overcome financial challenges. We
+                                    strive to be the bridge that
+                                    connects aspirations with
+                                    opportunities, providing accessible
+                                    and hassle-free loans.
+                                </p>
+                                <h1 class="mt-20">MISION</h1>
+                                <p class="mt-20">Our mission is to revolutionize the lending landscape
+                                    Providing an integrated platform that simplifies loan application
+                                    Process. We are committed to bringing transparency,
+                                    Convenience and personal assistance to each customer,
+                                    Ensuring that their journey towards financial growth is seamless.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -85,235 +101,116 @@
             </div>
         </section>
 
-        <!-- Statistics start -->
-        <!-- <section class="statistics-area pt-135 pb-140 bg_disable">
+
+        <!-- End About Section -->
+
+        <!-- faq -->
+
+        <section class="faq-area-3">
             <div class="container">
-                <div class="row gy-lg-0 gy-4 ">
-                    <div class="col-lg-7">
-                        <div class="statistics-widget-2 wow fadeInUp">
-                            <div class="row gx-0">
-                                <div class="col-7">
-                                    <div class="statistics-slider h-100">
-                                        <div class="widget-content  widget-1">
-                                            <h1 class="stat-counter">15,000</h1>
-                                            <p>We employ 15,000 people around the world</p>
+                <div class="row gy-lg-0 gy-4">
+                    <div class="col-lg-6">
+                        <img class="faq-img img-fluid" src="img/home-4/faq-Img.png" alt="">
+                    </div>
+                    <div class="col-lg-6 pl-lg-50">
+                        <span class="subtitle">_FAQ</span>
+                        <h1>Frequently asked general <span class="underline-shape">questions</span></h1>
+
+                        <div class="faq-widget">
+                            <div class="accordion" id="accordionExample">
+                                <div class="single-faq wow fadeInUp" data-wow-delay="0.1s">
+                                    <div class="w-100">
+                                        <div class="faq-header" id="headingOne">
+                                            <h4 class="mb-0" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                                What documents are required to get a Business Loan , Home Loan, Mortgage Loan , Car Loan , Builder Inventory Funding, Builder Project Finance and Loan Against Share’s ?
+                                                <i class="icon_plus"></i><i class=" icon_minus-06"></i>
+                                            </h4>
                                         </div>
-                                        <div class="widget-content  widget-1">
-                                            <h1 class="stat-counter">10,000</h1>
-                                            <p>We employ 15,000 people around the world</p>
+                                        <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                            <div class="faq-body">
+                                                <ul>
+                                                    <li>1. PAN Card </li>
+                                                    <li>2. Aadhaar Card </li>
+                                                    <li>3. 12 months bank statement in PDF format </li>
+                                                    <li>4. Business proof</li>
+                                                    <li>5. 2 Years ITR full set</li>
+                                                </ul>
+                                            </div>
                                         </div>
-                                        <div class="widget-content  widget-1">
-                                            <h1 class="stat-counter">25,000</h1>
-                                            <p>We employ 15,000 people around the world</p>
+                                    </div>
+                                </div>
+
+                                <div class="single-faq wow fadeInUp" data-wow-delay="0.3s">
+                                    <div class="w-100">
+                                        <div class="faq-header" id="headingTwo">
+                                            <h4 class="mb-0 collapsed" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                                I don’t have a credit(CIBIL) score. Will I
+                                                get a loan?
+                                                <i class="icon_plus"></i><i class=" icon_minus-06"></i>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                                            <div class="faq-body">
+                                                <p>Yes, Dfincs will use your banking data to
+                                                    generate an offer for you.
+                                                </p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-5">
-                                    <img class="img-fluid" src="img/statistics/img-1 (1).png" alt="img">
+
+                                <div class="single-faq wow fadeInUp" data-wow-delay="0.5s">
+                                    <div class="w-100">
+                                        <div class="faq-header" id="headingThree">
+                                            <h4 class="mb-0 collapsed" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                                                How long will it take to get a loans?<i class="icon_plus"></i><i class=" icon_minus-06"></i>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                                            <div class="faq-body">
+
+                                                <ul>
+                                                    <li>A. Business Loan - 5 to 8 working days </li>
+                                                    <li>B. Home Loan - 12 to 15 Working days </li>
+                                                    <li>C. Mortgage Loan - 15 to 20 working days</li>
+                                                    <li>D. Builder Inventory Funding - 20 to 25 working days. </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
                                 </div>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5">
-                        <div class="statistics-widget-2  wow fadeInUp" data-wow-delay="0.2s">
-                            <div class="widget-content widget-2">
-                                <h1 class="stat-counter">125</h1>
-                                <p>Our colleagues come from 125 different countries</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row pt-30 pb-30 gy-4 gy-lg-0">
-                    <div class="col-lg-7">
-                        <div class="row gy-4 gy-lg-0">
-                            <div class="col-lg-4 col-md-6">
-                                <div class="statistics-widget-2 wow fadeInRight" data-wow-delay="0.1s">
-                                    <div class="widget-content widget-3">
-                                        <h1 class="stat-counter">75</h1>
-                                        <p>More than 75 years in business</p>
+                                <div class="single-faq wow fadeInUp" data-wow-delay="0.7s">
+                                    <div class="w-100">
+                                        <div class="faq-header" id="headingFour">
+                                            <h4 class="mb-0 collapsed" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                                                How can I contact Dfincs customer
+                                                care?<i class="icon_plus"></i><i class=" icon_minus-06"></i>
+                                            </h4>
+                                        </div>
+                                        <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
+                                            <div class="faq-body">
+                                                <p>You can send an email to Dfincs.m@gmail.com or Contact:- +91 7208034445 / 7666456868</p>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-lg-4 col-md-6">
-                                <div class="statistics-widget-2 wow fadeInRight" data-wow-delay="0.3s">
-                                    <div class="widget-content widget-4">
-                                        <h1 class="stat-counter">450</h1>
-                                        <p>450 branches worldwide</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-lg-4 ">
-                                <div class="statistics-widget-2 wow fadeInRight" data-wow-delay="0.5s">
-                                    <div class="widget-content widget-5">
-                                        <h1 class="stat-counter">25</h1>
-                                        <p>We are present in 25 markets</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-lg-5 ">
-                        <div class="statistics-widget-2 wow fadeInRight" data-wow-delay="0.7s">
-                            <div class="widget-content widget-6" style="background-image: url(img/statistics/img_stat-2.png)">
-                                <h2>Best Consumer Digital Bank</h2>
-                                <p>Global Finance 2020</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="row gy-4 gy-md-0">
-                    <div class="col-md-5">
-                        <div class="statistics-widget-2 wow fadeInLeft" data-wow-delay="0.1s">
-                            <div class="widget-content widget-7" style="background-image: url(img/statistics/img-3\ \(1\).png);">
-                                <h1 class="stat-counter">35</h1>
-                                <p>Global Finance 2020</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-7">
-                        <div class="statistics-widget-2 wow fadeInLeft" data-wow-delay="0.3s">
-                            <div class="row gx-0">
-                                <div class="col-5">
-                                    <img class="img-fluid" src="img/statistics/img-6.png" alt="img">
-
-                                </div>
-                                <div class="col-7">
-                                    <div class="widget-content widget-8" style="background-image: url(img/statistics/img-4.png);">
-                                        <h1 class="stat-counter">2</h1>
-                                        <p>We’re listed on two of Asia’s largest stock exchanges</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
-        <!-- Statistics end -->
-
-        <!-- Recgnition start -->
-        <section class="recognition-area bg_white pt-50 pb-50">
-            <div class="container">
-                <div class="section-title text-start">
-                    <span class="short-title mt-0 wow fadeInUp">
-                        Recognition
-                    </span>
-                    <h2 class="mb-0 wow fadeInUp" data-wow-delay="0.2s">Milestones and Accolades</h2>
-                </div>
-
-                <div class="recognition-widget pt-70">
-                    <div class="row gy-4 gy-lg-0">
-                        <div class="col-lg-3 col-5">
-                            <div class="widget-navigation wow fadeInUp pe-lg-4" data-wow-delay="0.1s">
-                                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link active" id="2020-tab" data-bs-toggle="tab" href="#twenty" role="tab" aria-controls="twenty" aria-selected="true">2020</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="2019-tab" data-bs-toggle="tab" href="#nineteen" role="tab" aria-controls="nineteen" aria-selected="false">2019</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="2018-tab" data-bs-toggle="tab" href="#eighteen" role="tab" aria-controls="eighteen" aria-selected="false">2018</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link" id="2017-tab" data-bs-toggle="tab" href="#seventeen" role="tab" aria-controls="seventeen" aria-selected="false">2017</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link " id="2016-tab" data-bs-toggle="tab" href="#sixteen" role="tab" aria-controls="sixteen" aria-selected="false">2016</a>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <a class="nav-link " id="2015-tab" data-bs-toggle="tab" href="#fifteen" role="tab" aria-controls="fifteen" aria-selected="false">2015</a>
-                                    </li>
-                                    <!-- <li class="nav-item" role="presentation">
-                                        <a class="nav-link " id="2014-tab" data-bs-toggle="tab" href="#lessfifteen" role="tab" aria-controls="lessfifteen" aria-selected="false">2014 and
-                                            before</a>
-                                    </li> -->
-
-                                </ul>
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-7 ">
-                            <div class="tab-content wow fadeInUp" data-wow-delay="0.3s" id="myTabContent">
-                                <div class="tab-pane fade show active" id="twenty" role="tabpanel" aria-labelledby="2020-tab">
-                                    <h3>2020</h3>
-                                    <p>The First Mauritian Bank to join the GRI Community</p>
-                                    <p>Instant account opening with a Customer On-boarding App</p>
-                                </div>
-                                <div class="tab-pane fade" id="nineteen" role="tabpanel" aria-labelledby="2019-tab">
-                                    <h3>2019</h3>
-                                    <p>The First Mauritian Bank to join the GRI Community</p>
-                                    <p>Instant account opening with a Customer On-boarding App</p>
-                                </div>
-                                <div class="tab-pane fade" id="eighteen" role="tabpanel" aria-labelledby="2018-tab">
-                                    <h3>2018</h3>
-                                    <p>The First Mauritian Bank to join the GRI Community</p>
-                                    <p>Instant account opening with a Customer On-boarding App</p>
-                                </div>
-                                <div class="tab-pane fade" id="seventeen" role="tabpanel" aria-labelledby="2017-tab">
-                                    <h3>2017</h3>
-                                    <p>The First Mauritian Bank to join the GRI Community</p>
-                                    <p>Instant account opening with a Customer On-boarding App</p>
-                                </div>
-                                <div class="tab-pane fade" id="sixteen" role="tabpanel" aria-labelledby="2016-tab">
-                                    <h3>2016</h3>
-                                    <p>The First Mauritian Bank to join the GRI Community</p>
-                                    <p>Instant account opening with a Customer On-boarding App</p>
-                                </div>
-                                <div class="tab-pane fade" id="fifteen" role="tabpanel" aria-labelledby="2015-tab">
-                                    <h3>2015</h3>
-                                    <p>The First Mauritian Bank to join the GRI Community</p>
-                                    <p>Instant account opening with a Customer On-boarding App</p>
-                                </div>
-                                <div class="tab-pane fade" id="lessfifteen" role="tabpanel" aria-labelledby="2014-tab">
-                                    <h3>2014 and before</h3>
-                                    <p>The First Mauritian Bank to join the GRI Community</p>
-                                    <p>Instant account opening with a Customer On-boarding App</p>
-                                    <p>The First Mauritian Bank to join the GRI Community</p>
-                                    <p>Instant account opening with a Customer On-boarding App</p>
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="col-xl-4 col-lg-5 offset-xl-1 pr-lg-35 pl-lg-35">
-                            <div class="accolades-widget wow fadeInUp" data-wow-delay="0.5s">
-                                <div class="accolades-header d-flex justify-content-between align-items-end">
-                                    <h2>Awards</h2>
-                                    <img src="img/recognition/icon.svg" alt="icon">
-                                </div>
-                                <div class="accolades-content">
-                                    <ul>
-                                        <li class="">
-                                            <p class="subtitle">CITI BANK</p>
-                                            <p class="text">Straight-Through processing (STP) Excellence Award</p>
-                                        </li>
-                                        <li class="mt-3">
-                                            <p class="subtitle">MARCOM AWARDS</p>
-                                            <p class="text">Platinum Winner for ‘The Believers’ Campaign</p>
-                                        </li>
-                                        <li class="mt-3">
-                                            <p class="subtitle">BURJ CEO AWARDS</p>
-                                            <p class="text">Most Innovative Bank in Mauritius</p>
-                                        </li>
-                                        <li class="mt-3">
-                                            <p class="subtitle">GLOBAL BRANDS MAGAZINE</p>
-                                            <p class="text">Most Innovative Treasury Services</p>
-                                            <p class="text">Best Banking Brand in Mauritius</p>
-                                            <p class="text">Best Credit Card Rewards Program</p>
-                                        </li>
-
-                                    </ul>
-                                </div>
-                            </div>
+                            <h6 class="more-contact">Have more question ? <a href="contact.php">Contact Us</a></h6>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-        <!-- Recgnition end -->
+        <!-- faq end-->
+
 
         <!-- Leadership Team start -->
-        <section class="leadership-area pt-135 pb-140 bg_disable">
+
+
+
+
+        <section class="leadership-area pt-35 pb-40 bg_disable">
             <div class="container">
                 <div class="row align-items-end">
                     <div class="col-sm-8">

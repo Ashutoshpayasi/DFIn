@@ -419,7 +419,7 @@
       var AmountFormat = wNumb({
         decimals: 0,
         thousand: ",",
-        prefix: "$",
+        prefix: "₹",
       });
       var AmountFormatNoMerge = wNumb({
         decimals: 0,
