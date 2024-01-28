@@ -113,7 +113,7 @@
                         <img class="faq-img img-fluid" src="img/home-4/faq-Img.png" alt="">
                     </div>
                     <div class="col-lg-6 pl-lg-50">
-                        <span class="subtitle">_FAQ</span>
+                        <span class="subtitle"></span>
                         <h1>Frequently asked general <span class="underline-shape">questions</span></h1>
 
                         <div class="faq-widget">

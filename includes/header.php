@@ -12,75 +12,70 @@
         </div>
     </div>
 
-    <!-- style for loop -->
-
-
-    <style>
-        .price-ticker {
-            white-space: nowrap;
-            overflow: hidden;
-            position: relative;
-        }
-
-        .price-ticker li {
-            display: inline-block;
-            margin-right: 20px;
-            width: 95px;
-            box-sizing: border-box;
-            animation: scrollTicker 5s linear infinite;
-        }
-
-        @keyframes scrollTicker {
-            from {
-                transform: translateX(100%);
-            }
-
-            to {
-                transform: translateX(-100%);
-            }
-        }
-    </style>
-
-
-
     <section class="bg-danger">
         <div class="container-fluid">
+        <div class="topbar">
+            <div class="client-swiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <li class="list-inline-item">SBI<span class="badge bg-up ms-1">8.60%<i class="fas fa-circle"></i></span></li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="list-inline-item">HDFC<span class="badge bg-down ms-1">8.50%<i class="fas fa-circle"></i></span></li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="list-inline-item">Kotak<span class="badge bg-down ms-1">8.65%<i class="fas fa-circle"></i></span></li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="list-inline-item">IDFC<span class="badge bg-up ms-1">8.75%<i class="fas fa-circle"></i></span></li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="list-inline-item">BOB<span class="badge bg-up ms-1">8.75%<i class="fas fa-circle"></i></span></li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="list-inline-item">ICICI<span class="badge bg-up ms-1">8.65%<i class="fas fa-circle"></i></span></li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="list-inline-item">AXIS<span class="badge bg-down ms-1">8.60%<i class="fas fa-circle"></i></span></li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="list-inline-item">IIFL<span class="badge bg-up ms-1">9.25%<i class="fas fa-circle"></i></span></li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="list-inline-item">Indus<span class="badge bg-up ms-1">8.65%<i class="fas fa-circle"></i></span></li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="list-inline-item">Cent<span class="badge bg-up ms-1">8.85%<i class="fas fa-circle"></i></span></li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="list-inline-item">BOI<span class="badge bg-up ms-1">8.75%<i class="fas fa-circle"></i></span></li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="list-inline-item">Bajaj<span class="badge bg-up ms-1">8.55%<i class="fas fa-circle"></i></span></li>
+                    </div>
+                    <div class="swiper-slide">
+                        <li class="list-inline-item">IndiaBulls<span class="badge bg-up ms-1">9.25%<i class="fas fa-circle"></i></span></li>
+                    </div>
+                </div>
+            </div>
+        </div>
             <div class="row">
                 <div class="col-12">
 
+                    <style>
+                        .swiper-wrapper {
 
-                    <ul class="price-ticker list-inline overflow-hidden mb-0">
-
-                        <li class="list-inline-item">SBI<span class="badge bg-up ms-1">8.60%<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">HDFC<span class="badge bg-down ms-1">8.50%<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">Kotak<span class="badge bg-down ms-1">8.65%<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">IDFC<span class="badge bg-up ms-1">8.75%<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">BOB<span class="badge bg-up ms-1">8.75%<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">ICICI<span class="badge bg-up ms-1">8.65%<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">AXIS<span class="badge bg-down ms-1">8.60%<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">IIFL<span class="badge bg-up ms-1">9.25%<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">Indus<span class="badge bg-up ms-1">8.65%<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">Cent<span class="badge bg-up ms-1">8.85%<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">BOI<span class="badge bg-up ms-1">8.75%<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">Bajaj<span class="badge bg-up ms-1">8.55%<i class="fas fa-circle"></i></span></li>
-                        <li class="list-inline-item">IndiaBulls<span class="badge bg-up ms-1">9.25%<i class="fas fa-circle"></i></span></li>
-                        <!-- <li class="list-inline-item">AdityaBirla<span class="badge bg-up ms-1">8.25%<i class="fas fa-circle"></i></span></li> -->
-                    </ul>
+                            transition-timing-function: linear !important
+                        }
+                    </style>
                 </div>
+                </ul>
             </div>
-            </ul>
-        </div>
         </div>
         </div>
     </section>
-
-
-
-
     <!-- Header -->
     <header class="header">
-
-
         <div class="header-menu header-menu-4" id="sticky">
             <nav class="navbar navbar-expand-lg ">
                 <div class="container">
@@ -105,14 +100,10 @@
                         <ul class="navbar-nav menu ms-auto">
                             <li class="nav-item dropdown submenu ">
                                 <a href="index.php" class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
-
-
                             </li>
 
                             <li class="nav-item dropdown submenu ">
                                 <a href="about.php" class="nav-link dropdown-toggle " role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">About</a>
-
-
                             </li>
 
                             <li class="nav-item dropdown submenu">
@@ -121,23 +112,6 @@
                                 </a>
                                 <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-bs-toggle="dropdown"></i>
                             </li>
-                            <!-- <li class="nav-item dropdown submenu">
-                                <a class="nav-link dropdown-toggle" href="career.php" role="button"
-                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    Job Pages
-                                </a>
-                                <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false"
-                                    data-bs-toggle="dropdown"></i>
-                                <ul class="dropdown-menu">
-                                    <li class="nav-item"><a class="nav-link" href="career.php">Career</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="job-post.php">Jobs</a>
-                                    </li>
-                                    <li class="nav-item"><a class="nav-link" href="job-application.php">Job
-                                            Application</a>
-                                    </li>
-                                </ul>
-                            </li> -->
-
 
                             <li class="nav-item dropdown submenu">
                                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -158,11 +132,6 @@
                                     Contact Us
                                 </a>
                                 <i class="arrow_carrot-down_alt2 mobile_dropdown_icon" aria-hidden="false" data-bs-toggle="dropdown"></i>
-                                <!-- <ul class="dropdown-menu ">
-                                    <li class="nav-item"><a class="nav-link" href="blog.php">Blog Listing</a></li>
-                                    <li class="nav-item"><a class="nav-link" href="blog-details.php">Blog Details</a>
-                                    </li>
-                                </ul> -->
                             </li>
                         </ul>
                         <a class="theme-btn theme-btn-rounded-2 theme-btn-alt" href="#" target="_blank">
@@ -270,45 +239,3 @@
             </div>
         </aside>
     </div>
-
-
-
-
-    <!-- Add this script to your HTML file -->
-    <!-- Add this script to your HTML file -->
-    <!-- <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            const priceTicker = document.querySelector('.price-ticker');
-            const tickerItems = document.querySelectorAll('.price-ticker li');
-
-            // Clone the list items to create an infinite loop
-            const clonedItems = [...tickerItems].map(item => item.cloneNode(true));
-
-            // Append cloned items to the ticker
-            clonedItems.forEach(item => priceTicker.appendChild(item));
-
-            // Set the width of the ticker to accommodate cloned items
-            const tickerWidth = tickerItems[0].offsetWidth;
-            priceTicker.style.width = `${tickerWidth * (tickerItems.length + clonedItems.length)}px`;
-
-            // Scroll animation
-            let scrollValue = 0;
-
-            function scrollTicker() {
-                scrollValue += 1;
-
-                // Reset scroll to the beginning when it reaches the total width
-                if (scrollValue >= tickerWidth * tickerItems.length) {
-                    scrollValue = 0;
-                }
-
-                priceTicker.style.transform = `translateX(-${scrollValue}px)`;
-                requestAnimationFrame(scrollTicker);
-            }
-            requestAnimationFrame(scrollTicker);
-        });
-    </script> -->
-
-
-
-    <!-- Header end-->

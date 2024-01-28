@@ -502,7 +502,7 @@ https://api.whatsapp.com/send/?phone=7666456868&text=hijijij&type=phone_number&a
                         <img class="faq-img img-fluid" src="img/home-4/faq-Img.png" alt="">
                     </div>
                     <div class="col-lg-6 pl-lg-50">
-                        <span class="subtitle">_FAQ</span>
+                        <span class="subtitle"></span>
                         <h1>Frequently asked general <span class="underline-shape">questions</span></h1>
 
                         <div class="faq-widget">
@@ -903,6 +903,20 @@ https://api.whatsapp.com/send/?phone=7666456868&text=hijijij&type=phone_number&a
             });
         });
     </script>
+
+
+<script>
+        const clientSwiper = new Swiper('.client-swiper', {
+            slidesPerView: 9,
+            loop: true,
+            speed: 2000,
+            autoplay: {
+                delay: 0.1,
+                disableOnInteraction: false,
+            },
+        });
+    </script>
+
 </body>
 
 
